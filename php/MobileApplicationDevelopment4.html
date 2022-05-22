@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+			
+			
+<script src="https://kit.fontawesome.com/ffbe392e20.js" crossorigin="anonymous"></script>
+<?php
+include('backbutton.php');
+ ?>
+		<?
+        php include('navbar.php'); 
+        ?>
+        <link href="../css/content.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/border.css" rel="stylesheet">
+         <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/upbutton.css" rel="stylesheet">
+			</head>
+				
+			
+        <body>
+            <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <a class="nav-title aa" id="back">
+        Back
+      </a>
+      <div class="nav-title">
+        YMN
+      </div>
+    </div>
+    <div class="nav-btn" id="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  
+  <div class="nav-links" id="nav-links">
+
+    <a href="MobileApplicationDevelopmentL.html" class="aa">Mobile Development</a>
+    <a href="imageprocessingL.html" class="aa">Digital Image Processing</a>
+    <a href="LinuxL.html" class="aa">Linux Administration</a>
+    <a href="NetworkingL.html" class="aa">Networking Essentials</a>
+  </div>
+</div>
+<a href="#start"><div class="topp" title="top">
+            <span>
+            <i class="fa fa-solid fa-arrow-up"></i>
+                </span>
+</div></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading" id="start">BUILDING USER INTERFACES</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="title"> <span>Content</span></h3>                             
+                                <a href="#one" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Text controls </p></a>
+                                <a href="#two" class="contentaa"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Button controls </p></a>
+                                <a href="#three" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Toggle buttons  </p></a>
+                                <a href="#four" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>ImageButton, RadioButton, and RadioGroup Views, ProgressBar 
+                                    View , AutoCompleteTextView View</p></a>
+                                <a href="#five" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>TimePicker View, DatePicker View</p></a>
+                                <a href="#six" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>AnalogClock and DigitalClock Views</p></a>
+                                <a href="#seven" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>WebView</p></a>
+                                <a href="#eight" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Toast notifications </p></a>
+                                
+                                
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12">
+                    <h4 id="one">Text controls </h4>
+                    <p>
+                        A TextView displays text to the user and optionally allows them to edit it. A TextView is a complete text editor, however the basic class is configured to not allow editing.<br><br>
+                        Following are the important attributes related to TextView control.
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Sr.No</th>
+                                    <th scope="col">Attribute & Description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><b>android:id</b><br>
+                                        This is the ID which uniquely identifies the control.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><b>android:capitalize</b><br>
+                                        If set, specifies that this TextView has a textual input method and should automatically capitalize what the user types.<br>
+
+                                        1] Don't automatically capitalize anything - 0<br>
+                                        2] Capitalize the first word of each sentence - 1<br>
+                                        3] Capitalize the first letter of every word - 2<br>
+                                        4] Capitalize every character - 3<br>
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><b>android:cursorVisible</b><br>
+                                        Makes the cursor visible (the default) or invisible. Default is false.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><b>android:editable</b><br>
+                                        If set to true, specifies that this TextView has an input method.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><b>android:fontFamily</b><br>
+                                        Font family (named by string) for the text.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><b>android:maxHeight</b><br>
+                                        Makes the TextView be at most this many pixels tall.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><b>android:maxWidth</b><br>
+                                        Makes the TextView be at most this many pixels wide. 
+                                    </td>                                    
+                                </tr>
+                            </tbody>
+                          </table>
+                        
+                    </p>
+                    <h4 id="two">Button controls</h4>
+                    <p>
+                        A Button is a Push-button which can be pressed, or clicked, by the user to perform an action.<br><br>
+                        Following are the important attributes related to Button control.Inherited from android.widget.TextView Class −
+
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Sr.No</th>
+                                    <th scope="col">Attribute & Description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><b>android:autoText</b><br>
+                                        If set, specifies that this TextView has a textual input method and automatically corrects some common spelling errors.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><b>android:drawableBottom</b><br>
+                                        This is the drawable to be drawn below the text.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><b>android:drawableRight</b><br>
+                                        This is the drawable to be drawn to the right of the text.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><b>android:editable</b><br>
+                                        If set, specifies that this TextView has an input method.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><b>android:text</b><br>
+                                        This is the Text to display.
+                                    </td>                                    
+                                </tr>
+                                
+                            </tbody>
+                          </table>
+                    </p>
+                    <h4 id="three">Toggle buttons</h4>
+                    <p>
+                        Android Toggle Button can be used to display checked/unchecked (On/Off) state on the button.<br>
+
+                        It is beneficial if user have to change the setting between two states. It can be used to On/Off Sound, Wifi, Bluetooth etc.<br>
+
+                        Since Android 4.0, there is another type of toggle button called switch that provides slider control.<br>
+
+                        Android ToggleButton and Switch both are the subclasses of CompoundButton class.
+                        <div style="text-align: center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe0Kx1i-gJs6cZGDko_Zgnf-m67IGPiSH5Aw&usqp=CAU" class="img-fluid" ><br>
+                        </div>
+                        Attributes of ToggleButton class<br><br>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Sr.No</th>
+                                    <th scope="col">Attribute & Description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><b>android:disabledAlpha</b><br>
+                                        The alpha to apply to the indicator when disabled.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><b>android:textOff</b><br>
+                                        The text for the button when it is not checked.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><b>android:textOn</b><br>
+                                        The text for the button when it is checked.
+                                    </td>                                    
+                                </tr>
+                                
+                            </tbody>
+                          </table>                       
+                    </p>
+                    <h4 id="four">ImageButton, RadioButton, and RadioGroup Views, ProgressBar 
+                        View , AutoCompleteTextView View </h4><br>
+                    <h4>ImageButton</h4>                  
+                     <p>
+                        
+                        An ImageButton is an AbsoluteLayout which enables you to specify the exact location of its children. This shows a button with an image (instead of text) that can be pressed or clicked by the user.
+                        <div style="text-align: center">
+                            <img src="https://www.tutorialspoint.com/android/images/image_button.jpg" class="img-fluid" width="80%"><br>
+                        </div>
+                        Following are the important attributes related to ImageButton control.<br><br>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Sr.No</th>
+                                    <th scope="col">Attribute & Description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><b>android:adjustViewBounds</b><br>
+                                        Set this to true if you want the ImageView to adjust its bounds to preserve the aspect ratio of its drawable.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><b>android:baseline</b><br>
+                                        This is the offset of the baseline within this view.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><b>android:cropToPadding</b><br>
+                                        If true, the image will be cropped to fit within its padding.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><b>android:src</b><br>
+                                        This sets a drawable as the content of this ImageView.
+                                    </td>                                    
+                                </tr>
+                               
+                            </tbody>
+                          </table>
+                    </p>   <br>
+                   <h4>RadioButton</h4>
+                   <p>
+                    RadioButton is a two states button which is either checked or unchecked. If a single radio button is unchecked, we can click it to make checked radio button. Once a radio button is checked, it cannot be marked as unchecked by user.
+                    <div style="text-align: center">
+                        <img src="https://docs.microsoft.com/en-us/windows/apps/design/controls/images/controls/radio-button.png" class="img-fluid" ><br>
+                    </div>
+                    
+                   </p><br>
+                   <h4>RadioGroup Views</h4>
+                   <p>
+                    A RadioGroup class is used for set of radio buttons.If we check one radio button that belongs to a radio group, it automatically unchecks any previously checked radio button within the same group.<br>
+                    Following are the important attributes related to RadioGroup control.<br><br>
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr style="text-align: center;">
+                                <th scope="col">Sr.No</th>
+                                <th scope="col">Attribute & Description</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><b>android:checkedButton</b><br>
+                                    This is the id of child radio button that should be checked by default within this radio group. 
+                                </td>                                    
+                            </tr>
+                           
+                        </tbody>
+                      </table>
+                   </p><br>
+                   <h4>ProgressBar View</h4>
+                   <p>
+                    We can display the android progress bar dialog box to display the status of work being done e.g. downloading file, analyzing status of work etc.<br>
+
+                    In this example, we are displaying the progress dialog for dummy file download operation.<br>
+                    
+                    Here we are using android.app.ProgressDialog class to show the progress bar. Android ProgressDialog is the subclass of AlertDialog class.<br>
+                    
+                    The ProgressDialog class provides methods to work on progress bar like setProgress(), setMessage(), setProgressStyle(), setMax(), show() etc. The progress range of Progress Dialog is 0 to 10000.<br>
+                    <div style="text-align: center">
+                        <img src="https://3.bp.blogspot.com/-nd7ZIPAmQmc/Vqw5mwHbeyI/AAAAAAAACZw/sMhhAOGjMxU/w1200-h630-p-k-no-nu/progress-bar-android-example.jpg" class="img-fluid" width="80%"><br>
+                    </div>
+                   </p><br>
+                   <h4>AutoCompleteTextView View</h4>
+                   <p>
+                    Android AutoCompleteTextView is an editable text view which shows a list of suggestions when user starts typing text. When a user starts typing, a dropdown menu will be there based on the entered characters, defined in the threshold limit and the user can choose an item from the list to replace the text.<br>
+
+                    The AutoCompleteTextView is a subclass of EditText class so we can easily inherit all the properties of EditText as per our requirements.<br>
+                    
+                    The dropdown list will be obtained using the data adaptor and these suggestions will be appeared only after entering the minimum number of characters defined in the Threshold limit. The Threshold limit is used to define the minimum number of characters the user must type to see the dropdown list of suggestions.<br>
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr style="text-align: center;">
+                                <th scope="col">Sr.No</th>
+                                <th scope="col">Attribute & Description</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><b>android:id</b><br>
+                                    Used to uniquely identify the control.  
+                                </td>                                    
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><b>android:completionHint</b><br>
+                                    This defines the hint displayed in the drop down menu.
+                                </td>                                    
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><b>android:completionHintView</b><br>
+                                    This defines the hint view displayed in the drop down menu.
+                                </td>                                    
+                            </tr>
+                            
+                        </tbody>
+                      </table>
+                   </p><br>
+                    <h4 id="five">TimePicker View, DatePicker View</h4><br>
+                    <h4>TimePicker View</h4>
+                    <p>
+                        Android Time Picker allows you to select the time of day in either 24 hour or AM/PM mode. The time consists of hours, minutes and clock format. Android provides this functionality through TimePicker class.<br>
+                        In order to use TimePicker class, you have to first define the TimePicker component in your activity.xml. It is define as below −
+                        <div class="borderr">
+                            < TimePicker
+                            android:id="@+id/timePicker1"<br>
+                            android:layout_width="wrap_content"<br>
+                            android:layout_height="wrap_content" />
+                        </div><br>
+                        <div style="text-align: center">
+                            <img src="https://www.tutorialspoint.com/android/images/set_time.jpg" class="img-fluid" >
+                        </div><br>
+                        Methods for TimePicker:<br><br>
+                          <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Sr.No</th>
+                                    <th scope="col">Method & description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><b>is24HourView()</b><br>
+                                        This method returns true if this is in 24 hour view else false
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><b>isEnabled()</b><br>
+                                        This method returns the enabled status for this view
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><b>setCurrentHour(Integer currentHour)</b><br>
+                                        This method sets the current hour
+                                    </td>                                    
+                                </tr>
+                               
+                            </tbody>
+                          </table>
+                    </p>  
+                    <h4>DatePicker View</h4>
+                    <p>
+                        Android Date Picker allows you to select the date consisting of day, month and year in your custom user interface. For this functionality android provides DatePicker and DatePickerDialog components.<br>
+                        In order to show DatePickerDialog , you have to pass the DatePickerDialog id to showDialog(id_of_dialog) method.<br>
+                        <div style="text-align: center">
+                            <img src="https://www.tutorialspoint.com/android/images/set_date.jpg" class="img-fluid" >
+                        </div><br>
+                        Methods for DatePicker:<br><br>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Sr.No</th>
+                                    <th scope="col">Method  & Description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><b>getDayOfMonth()</b><br>
+                                        This method gets the selected day of month
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><b>getMonth()</b><br>
+                                        This method gets the selected month
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><b>getYear()</b><br>
+                                        This method gets the selected year 
+                                    </td>                                    
+                                </tr>
+                                
+                            </tbody>
+                          </table>
+                    </p>  <br> 
+                    <h4 id="six">AnalogClock and DigitalClock Views</h4>
+                    <p>
+                        The android.widget.AnalogClock and android.widget.DigitalClock classes provides the functionality to display analog and digital clocks.<br>
+
+                        Android analog and digital clocks are used to show time in android application.<br>
+                        
+                        Android AnalogClock is the subclass of View class.<br>
+                        
+                        Android DigitalClock is the subclass of TextView class.<br>
+                        <div style="text-align: center">
+                            <img src="https://static.javatpoint.com/androidpages/images/analogdigital.png" class="img-fluid" ><br>
+                        </div>
+                    </p>  <br>   
+                    <h4 id="seven">WebView</h4>
+                    <p>
+                        Android WebView is used to display web page in android. The web page can be loaded from same application or URL. It is used to display online content in android activity.<br>
+
+                        Android WebView uses webkit engine to display web page.<br>
+                        
+                        The android.webkit.WebView is the subclass of AbsoluteLayout class.<br>
+                    
+                        To add a WebView to your app, you can either include the < WebView > element in your activity layout, or set the entire Activity window as a WebView in onCreate().<br><br>
+                        To add a WebViewto your app in the layout, add the following code to your activity's layout XML file:<br>
+                        <div class="borderr">
+                            < WebView
+                            android:id="@+id/webview"<br>
+                            android:layout_width="match_parent"<br>
+                            android:layout_height="match_parent"<br>
+                             />
+                        </div><br>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Sr.No</th>
+                                    <th scope="col">Method  & Description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><b>canGoBack()</b><br>
+                                        This method specifies the WebView has a back history item.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><b>canGoForward()</b><br>
+                                        This method specifies the WebView has a forward history item. 
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><b>clearHistory()</b><br>
+                                        This method will clear the WebView forward and backward history.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><b>destroy()</b><br>
+                                        This method destroy the internal state of WebView. 
+                                    </td>                                    
+                                </tr>
+                                
+                            </tbody>
+                          </table>
+                    </p> <br>
+                    <h4 id="eight">Toast notifications </h4>
+                    <p>
+                        toast notification is a message that pops up on the surface of the window. It only fills the amount of space required for the message and the user's current activity remains visible and interactive. The notification automatically fades in and out, and does not accept interaction events.<br>
+
+                        The screenshot below shows an example toast notification from the Alarm application. Once an alarm is turned on, a toast is displayed to assure you that the alarm was set.
+                        <div style="text-align: center">
+                            <img src="http://www.dre.vanderbilt.edu/~schmidt/android/android-4.0/out/target/common/docs/doc-comment-check/images/toast.png" class="img-fluid" ><br>
+                        </div><br>
+                        A toast can be created and displayed from an Activity or Service. If you create a toast notification from a Service, it appears in front of the Activity currently in focus.<br>
+                        
+                    </p> 
+                   
+                </div>
+            </div>
+        </div>
+        <script>
+             document.getElementById("back").setAttribute("href","MobileApplicationDevelopmentL.html");
+        </script>
+<script src="main.js" type="text/javascript"></script>
+		
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+						
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  				
+		</body>
+	</html>

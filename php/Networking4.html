@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    
+   
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     
+    
+     <script src="https://kit.fontawesome.com/ffbe392e20.js" crossorigin="anonymous"></script>
+     <?php
+     include('backbutton.php');
+      ?>
+     <?php include('navbar.php'); ?>
+        <link href="../css/content.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+     <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/upbutton.css" rel="stylesheet">
+        <style>
+           
+            
+            body{
+                /* padding:20px; */
+                text-align: justify;
+            }
+            .heading{
+                text-align:center;
+                color:#ff0090;
+                margin-bottom: 10px;
+            }
+            ol li span{
+                color:black;
+                font-weight: bold;
+            }
+            .content{
+                text-align: center;
+            }
+        </style>
+
+        </head>
+            
+        
+    <body>	
+   <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <a class="nav-title aa" id="back">
+        Back
+      </a>
+      <div class="nav-title">
+        YMN
+      </div>
+    </div>
+    <div class="nav-btn" id="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  
+  <div class="nav-links" id="nav-links">
+
+    <a href="MobileApplicationDevelopmentL.html" class="aa">Mobile Development</a>
+    <a href="imageprocessingL.html" class="aa">Digital Image Processing</a>
+    <a href="LinuxL.html" class="aa">Linux Administration</a>
+    <a href="NetworkingL.html" class="aa">Networking Essentials</a>
+  </div>
+</div>
+<a href="#start"><div class="topp" title="top">
+            <span>
+            <i class="fa fa-solid fa-arrow-up"></i>
+                </span>
+</div></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading" id="start">The Transport Layer</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="title"> <span>Content</span></h3>                             
+                                <a href="#one" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>The transport service- services primitives  </p></a>
+                                <a href="#two" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Sockets </p></a>
+                                <a href="#three" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Elements of transport protocols </p></a>
+                                <a href="#four" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>TCP Frame Format </p></a>
+                                <a href="#five" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>UDP Protocol </p></a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12">
+                    <h4 id="one">The transport service- services primitives</h4>
+                    <p>
+                        Transport Layer is the second layer in the TCP/IP model and the fourth layer in the OSI model. It is an end-to-end layer used to deliver messages to a host. It is termed an end-to-end layer because it provides a point-to-point connection rather than hop-to- hop, between the source host and destination host to deliver the services reliably. The unit of data encapsulation in the Transport Layer is a segment. <br>
+                        
+                       
+                    </p>
+                    <h4>services primitives </h4>
+                    <p>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Primitive</th>
+                                    <th scope="col">Meaning</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Request</td>
+                                    <td>It represent entity that wants or request service to perform some action or do some work (requesting for connection to remote computer).  
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>Indication</td>
+                                    <td>
+                                        It represent entity that is to be informed about event (receiver just have received request of connection).
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>Response</td>
+                                    <td>
+                                        It represents entity that is responding to event (receiver is simply sending the permission or allowing to connect). 
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>Confirm</td>
+                                    <td>
+                                        It represent entity that acknowledges the response to earlier request that has come back (sender just acknowledge the permission to get connected to the remote host).
+                                    </td>                                    
+                                </tr>
+                               
+                            </tbody>
+                          </table>
+                          <div style="text-align: center">
+                            <img src="https://erg.abdn.ac.uk/users/gorry/course/images/primitives.gif" class="img-fluid" width="80%"><br>
+                        </div>
+                    </p>
+                    <h4 id="two">Sockets</h4>
+                    <p>
+                        A socket is one endpoint of a two way communication link between two programs running on the network. The socket mechanism provides a means of inter-process communication (IPC) by establishing named contact points between which the communication take place.<br>
+
+                        Like ‘Pipe’ is used to create pipes and sockets is created using ‘socket’ system call. The socket provides bidirectional FIFO Communication facility over the network. A socket connecting to the network is created at each end of the communication. Each socket has a specific address. This address is composed of an IP address and a port number.<br>
+
+                        Socket are generally employed in client server applications. The server creates a socket, attaches it to a network port addresses then waits for the client to contact it. The client creates a socket and then attempts to connect to the server socket. When the connection is established, transfer of data takes place.<br>
+                        <div style="text-align: center">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200509144309/1406-4.png" class="img-fluid" ><br>
+                        </div>
+                        <br>
+                        <b>Types of Sockets :</b><br>
+                        There are two types of Sockets: the datagram socket and the stream socket.<br>
+                        <span><b>1. Datagram Socket :</b></span><br>
+                        <p>This is a type of network which has connection less point for sending and receiving packets. It is similar to mailbox. The letters (data) posted into the box are collected and delivered (transmitted) to a letterbox (receiving socket).</p>
+                        <span><b>2. Stream Socket</b></span><br>
+                        <p>In Computer operating system, a stream socket is type of interprocess communications socket or network socket which provides a connection-oriented, sequenced, and unique flow of data without record boundaries with well defined mechanisms for creating and destroying connections and for detecting errors. It is similar to phone. A connection is established between the phones (two ends) and a conversation (transfer of data) takes place.</p>
+                        <div style="text-align: center">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200509144631/223-1.png" class="img-fluid" ><br>
+                        </div>
+                    </p>
+                    <h4 id="three">Elements of transport protocols</h4>
+
+                    <p>
+                        
+                         <span><b>Process to process delivery:</b></span>
+                        <p>
+                            While Data Link Layer requires the MAC address (48 bits address contained inside the Network Interface Card of every host machine) of source-destination hosts to correctly deliver a frame and the Network layer requires the IP address for appropriate routing of packets, in a similar way Transport Layer requires a Port number to correctly deliver the segments of data to the correct process amongst the multiple processes running on a particular host. A port number is a 16-bit address used to identify any client-server program uniquely.
+                        </p>
+                        <span><b>End-to-end Connection between hosts:</b></span>
+                        <p>
+                            The transport layer is also responsible for creating the end-to-end Connection between hosts for which it mainly uses TCP and UDP. TCP is a secure, connection-orientated protocol that uses a handshake protocol to establish a robust connection between two end hosts. TCP ensures reliable delivery of messages and is used in various applications. UDP, on the other hand, is a stateless and unreliable protocol that ensures best-effort delivery. It is suitable for applications that have little concern with flow or error control and requires sending the bulk of data like video conferencing. It is often used in multicasting protocols.
+                        </p>
+                        <span><b>Multiplexing and Demultiplexing:</b></span>
+                        <p>
+                            Multiplexing allows simultaneous use of different applications over a network that is running on a host. The transport layer provides this mechanism which enables us to send packet streams from various applications simultaneously over a network. The transport layer accepts these packets from different processes differentiated by their port numbers and passes them to the network layer after adding proper headers. Similarly, Demultiplexing is required at the receiver side to obtain the data coming from various processes. Transport receives the segments of data from the network layer and delivers it to the appropriate process running on the receiver’s machine.
+                        </p>
+                        <span><b>Congestion Control:</b></span>
+                        <p>
+                            Congestion is a situation in which too many sources over a network attempt to send data and the router buffers start overflowing due to which loss of packets occur. As a result retransmission of packets from the sources increases the congestion further. In this situation, the Transport layer provides Congestion Control in different ways. It uses open loop congestion control to prevent the congestion and closed-loop congestion control to remove the congestion in a network once it occurred. TCP provides AIMD- additive increase multiplicative decrease, leaky bucket technique for congestion control.
+                        </p>
+                        <span><b>Data integrity and Error correction:</b></span>
+                        <p>
+                            The transport layer checks for errors in the messages coming from the application layer by using error detection codes, computing checksums, it checks whether the received data is not corrupted and uses the ACK and NACK services to inform the sender if the data has arrived or not and checks for the integrity of data.
+                        </p>
+                        <span><b>Flow control:</b></span>
+                        <p>
+                            The transport layer provides a flow control mechanism between the adjacent layers of the TCP/IP model. TCP also prevents data loss due to a fast sender and slow receiver by imposing some flow control techniques. It uses the method of sliding window protocol which is accomplished by the receiver by sending a window back to the sender informing the size of data it can receive.
+                        </p>
+                    </p>
+                    
+                    <h4 id="four">TCP Frame Format </h4>
+                    <p>
+                        <div style="text-align: center">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/TCPSegmentHeader-1.png" class="img-fluid" ><br>
+                        </div>
+                        The header of a TCP segment can range from 20-60 bytes. 40 bytes are for options. If there are no options, a header is 20 bytes else it can be of upmost 60 bytes. <br>
+                        Header fields: <br><br>
+                        <span><b>Source Port Address – </b></span><br>
+                        <p>A 16-bit field that holds the port address of the application that is sending the data segment. </p>
+                        <span><b>Destination Port Address – </b></span><br>
+                        <p>A 16-bit field that holds the port address of the application in the host that is receiving the data segment. </p>
+                        <span><b>Sequence Number – </b></span><br>
+                        <p>A 32-bit field that holds the sequence number, i.e, the byte number of the first byte that is sent in that particular segment. It is used to reassemble the message at the receiving end of the segments that are received out of order. </p>
+                        <span><b>Acknowledgement Number – </b></span><br>
+                        <p>A 32-bit field that holds the acknowledgement number, i.e, the byte number that the receiver expects to receive next. It is an acknowledgement for the previous bytes being received successfully. </p>
+                        <span><b>Header Length (HLEN) – </b></span><br>
+                        <p>This is a 4-bit field that indicates the length of the TCP header by a number of 4-byte words in the header, i.e if the header is 20 bytes(min length of TCP header), then this field will hold 5 (because 5 x 4 = 20) and the maximum length: 60 bytes, then it’ll hold the value 15(because 15 x 4 = 60). Hence, the value of this field is always between 5 and 15. </p>
+                        <span><b>Control flags –</b></span><br>
+                        <p>
+                            These are 6 1-bit control bits that control connection establishment, connection termination, connection abortion, flow control, mode of transfer etc. Their function is: <br>
+                            <ul>
+                                <li>URG: Urgent pointer is valid</li>
+                                <li>ACK: Acknowledgement number is valid( used in case of cumulative acknowledgement)</li>
+                                <li>PSH: Request for push</li>
+                                <li>RST: Reset the connection</li>
+                                <li>SYN: Synchronize sequence numbers</li>
+                                <li>FIN: Terminate the connection</li>
+                            </ul>
+                        </p>
+                        <span><b>Window size – </b></span><br>
+                        <p>This field tells the window size of the sending TCP in bytes. </p>
+                        <span><b>Checksum – </b></span><br>
+                        <p>This field holds the checksum for error control. It is mandatory in TCP as opposed to UDP. </p>
+                        <span><b>Urgent pointer – </b></span><br>
+                        <p>This field (valid only if the URG control flag is set) is used to point to data that is urgently required that needs to reach the receiving process at the earliest. The value of this field is added to the sequence number to get the byte number of the last urgent byte. </p>
+                    </p>
+                    <h4 id="five">UDP Protoco</h4>
+                    <p>
+                        User Datagram Protocol (UDP) is a Transport Layer protocol. UDP is a part of the Internet Protocol suite, referred to as UDP/IP suite. Unlike TCP, it is an unreliable and connectionless protocol. So, there is no need to establish a connection prior to data transfer. <br>
+
+                        Though Transmission Control Protocol (TCP) is the dominant transport layer protocol used with most of the Internet services; provides assured delivery, reliability, and much more but all these services cost us additional overhead and latency. Here, UDP comes into the picture. For real-time services like computer gaming, voice or video communication, live conferences; we need UDP. Since high performance is needed, UDP permits packets to be dropped instead of processing delayed packets. There is no error checking in UDP, so it also saves bandwidth. 
+                        User Datagram Protocol (UDP) is more efficient in terms of both latency and bandwidth. <br>
+                        <b>UDP Header – </b><br>UDP header is an 8-bytes fixed and simple header, while for TCP it may vary from 20 bytes to 60 bytes. The first 8 Bytes contains all necessary header information and the remaining part consist of data. UDP port number fields are each 16 bits long, therefore the range for port numbers is defined from 0 to 65535; port number 0 is reserved. Port numbers help to distinguish different user requests or processes. <br>
+                        <div style="text-align: center">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/UDP-header.png" class="img-fluid" ><br>
+                        </div><br>
+                        <span><b>1. Source Port:</b>Source Port is a 2 Byte long field used to identify the port number of the source.</span><br>
+                        <span><b>2. Destination Port:</b>It is a 2 Byte long field, used to identify the port of the destined packet.</span><br>
+                        <span><b>3. Length:</b>Length is the length of UDP including the header and the data. It is a 16-bits field.</span><br>
+                        <span><b>4. Checksum:</b>Checksum is 2 Bytes long field. It is the 16-bit one’s complement of the one’s complement sum of the UDP header, the pseudo-header of information from the IP header, and the data, padded with zero octets at the end (if necessary) to make a multiple of two octets.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+       <script>
+             document.getElementById("back").setAttribute("href","NetworkingL.html");
+        </script>
+
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        		
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    </body>
+</html>

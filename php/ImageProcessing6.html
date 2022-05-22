@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    
+   
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     
+    
+     <script src="https://kit.fontawesome.com/ffbe392e20.js" crossorigin="anonymous"></script>
+     <?php
+     include('backbutton.php');
+      ?>
+        <?php include('navbar.php'); ?>
+        <link href="../css/content.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/border.css" rel="stylesheet">
+     <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/upbutton.css" rel="stylesheet">
+        <style>
+           
+            
+            #bodyy{
+                /* padding:20px; */
+                text-align: justify;
+                height:100vh;
+            }
+            .heading{
+                text-align:center;
+                color:#ff0090;
+                margin-bottom: 10px;
+            }
+            ol li span{
+                color:black;
+                font-weight: bold;
+            }
+            .content{
+                text-align: center;
+            }
+
+        </style>
+
+        </head>
+            
+        
+    <body id="bodyy">	
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <a class="nav-title aa" id="back">
+        Back
+      </a>
+      <div class="nav-title">
+        YMN
+      </div>
+    </div>
+    <div class="nav-btn" id="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  
+  <div class="nav-links" id="nav-links">
+
+    <a href="MobileApplicationDevelopmentL.html" class="aa">Mobile Development</a>
+    <a href="imageprocessingL.html" class="aa">Digital Image Processing</a>
+    <a href="LinuxL.html" class="aa">Linux Administration</a>
+    <a href="NetworkingL.html" class="aa">Networking Essentials</a>
+  </div>
+</div>
+<a href="#start"><div class="topp" title="top">
+            <span>
+            <i class="fa fa-solid fa-arrow-up"></i>
+                </span>
+</div></a>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading" id="start">Introduction to MATLAB </h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="title"> <span>Content</span></h3>
+                            <!-- <p class="description"> -->
+                                
+                                    <a href="#one" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Advantages and disadvantages of MATLAB </p></a>
+                                    <a href="#two" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Using MATLAB scratch pad, MATLAB environment </p></a>
+                                    <a href="#three" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Variables and arrays, scalar and array operation</p></a>
+                                    <a href="#four" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>MATLAB operator, Multidimensional array, Introduction to M function programming </p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h4 id="one">Advantages and Disadvantages of MATLAB</h4><br>
+                    <h4>Advantages</h4>
+                        <span><b>Ease of Use</b></span>
+                        <p>
+                            The program can be used as a scratchpad to evaluate expressions typed at the command line, or it can be used to execute large prewritten programs. Applications may be written and changed with the built-in integrated development environment and debugged with the MATLAB debugger. Because the language is so simple to use, it is optimal for the fast prototyping of new applications.<br>
+                            Many program development tools are supported to make the program easy to use. They contain an integrated editor/debugger, on-line documentation and manuals, a workspace browser, and extensive demos.
+                        </p>
+                        <span><b>Platform Independence</b></span>
+                        <p>
+                            MATLAB is supported on different computer systems, providing a considerable measure of platform independence. The language is provided on Windows 2000/XP/Vista, Linux, various versions of UNIX, and the Macintosh. Applications written on any platform will run on the other entire platform, and information files written on any platform may be read apparently on any other platform. As a result, programs written in MATLAB can shift to new platforms when the needs of the user change.
+                        </p>
+                        <span><b>Predefined Functions</b></span>
+                        <p>
+                            MATLAB comes complete with a huge library of predefined functions that provides tested and prepackaged solutions to many primary technical tasks. For example, suppose that we are writing a program that must evaluate the statistics associated with an input data set. In most languages, we would need to write our subroutines or functions to implement calculations such as the arithmetic mean, standard deviation, median, and so on. These and hundreds of other services are built right into the MATLAB language, making your job much more comfortable.<br>
+
+                            In addition to the vast libraries of services built into the basic MATLAB language, there are many special-purpose toolboxes applicable to help solve complex problems in particular areas. For example, a user can buy standard toolkits to solve problems in signal processing, control systems, communications, image processing, and neural networks, etc. There is also a broad compilation of free user-contributed MATLAB programs that are shared through the MATLAB Web site.
+                        </p>
+                        <span><b>Device-Independent Plotting</b></span>
+                        <p>
+                            MATLAB has many basic plotting and imaging commands. The plots and pictures can be displayed on any graphical output device provided by the computer on which MATLAB is running. This facility makes MATLAB an outstanding tool for visualizing technical information.
+                        </p>
+                        <span><b>Graphical User Interface</b></span>
+                        <p>
+                            MATLAB contains a tool that allows a programmer to interactively design a Graphical User Interface (GUI) for his program. With this capability, the programmer can design refined data-analysis programs that can be operated by relatively inexperienced users.
+                        </p>
+                        <span><b>MATLAB Compiler</b></span>
+                        <p>
+                            MATLAB's adaptability and platform independence are produced by compiling MATLAB applications into a machine-independent p-code and then interpreting the p-code instruction at runtime. This method is equivalent to that used by Microsoft's Visual Basic language. Unfortunately, the resulting applications can sometimes execute slowly because the MATLAB code is interpreted rather than compiled.<br>
+
+                            A separate MATLAB compiler is available. This compiler can compile MATLAB programs into a real executable that runs faster than the interpreted code. It is a great technique to convert a prototype MATLAB program into an executable suitable for sale and distribution to users.
+                        </p>
+                    <h4>Disadvantages</h4>
+                        <span><b>Interpreted language</b></span>
+                        <p>
+                            The first disadvantage is that it is an interpreted language and, therefore, may execute more slowly than compiled language. This problem can be check by properly structuring the MATLAB program. 
+                        </p>
+                        <span><b>Cost</b></span>
+                        <p>
+                            A full copy of MATLAB is five to ten times more costly than a conventional C or FORTRAN compiler. This comparatively high cost is more than offset by the decreased time necessary for an engineer or scientist to create a working program, so MATLAB is cost-effective for businesses. However, it is too expensive for most individuals to consider purchasing. Fortunately, there is also an inexpensive Student Edition of MATLAB, which is an excellent tool for students wishing to learn the language. The Student Edition of MATLAB is virtually identical to the full edition.
+                        </p>
+
+                    <!-- <div style="text-align: center">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20191204123048/Capture666.png" class="img-fluid" width="80%" height="70%"><br>
+                    </div> -->
+                    
+                    </p><br>
+                    <h4 id="two">Using MATLAB scratch pad, MATLAB environment</h4><br>
+                    <h4>Using MATLAB scratch pad</h4>
+                    <p>
+                        
+                        Using MatLab package as a scratch pad interactively is one of the common 
+                        application of the MatLab package. MatLab commands are entered at the prompt 
+                        command, &gt;&gt;, of the Command Window through the PC keyboard. Both entered 
+                        commands and evaluation results are displayed in the Command Window. All new 
+                        line or lines of commands or instructions after the prompt command will be 
+                        passed to MatLab for evaluation after pressing the Enter key no matter the 
+                        position of mouse cursor is at the end of line or lines or not.
+                        <div style="text-align: center">
+                            <img src="https://www.mathworks.com/matlabcentral/discussions/uploaded_files/4556/data" class="img-fluid" width="80%"><br>
+                        </div>
+                    </p>
+                    <h4>MATLAB environment</h4>
+                    <p>
+                        When we start MATLAB, a specific window known as the MATLAB desktop appears. The desktop is a window that includes other windows display MATLAB data, plus toolbars and a "Start" button similar to that used by Windows XP. By default, most MATLAB tools are "docked" to the desktop so that they develop inside the desktop window. However, the user can choose to "undock" any or all tools, making them appear in windows separate from the desktop.<br>
+                        <div style="text-align: center">
+                            <img src="http://3.bp.blogspot.com/-rRrAKf4m_kU/Vp-AFmoSkdI/AAAAAAAAGoo/GzSefKpMhjY/s1600/post2%2B1.jpg" class="img-fluid" >
+                        </div>
+
+                        <span><b>Command Window</b></span><br>
+                        <p>This is the main window. It is characterized by the MATLAB command prompt (>>). When you launch the function program, MATLAB puts you in this window. All commands containing those for running user-written programs are typed in this window at the MATLAB prompt. In MATLAB, this window is a part of the MATLAB that contains other smaller windows or panes.</p>
+                        <span><b>Editor Window</b></span><br>
+                        <p>This is where we write, edit, create and save our programs in files known as M-files. We can use any text editor to carry out these functions. MATLAB supports its built-in editor. However, we can use our editor by typing the standard file-editing commands that we usually use on our system. From within MATLAB, the command is typed at the MATLAB prompt, ensuring the exclamation character (!). The exclamation character prompts MATLAB to return the control temporarily to the local operating system, which executes the commands providing the character. After the editing is completed, the control is returned to the MATLAB.
+
+                        </p>
+                        <span><b>MATLAB Workspace</b></span><br>
+                        <p>A statement such as
+                            <br>
+                            z = 10<br>
+                  
+                  creates a variable named z, stores the value 10 in it, and store it in a part of computer memory known as the workspace. A workspace is the set of all the variables and arrays that can be used by MATLAB when a specific command, M-file, or function is executing. All commands executed in the Command Window (as well as all script files executed from the Command Window) share a simple workspace, so they can all share variables. MATLAB operation differs from script files in that each operation has its separate workspace.</p>
+                        <span><b>Command History Window</b></span><br>
+                        <p>All commands typed on the MATLAB prompt in the command window get documented, even across various sessions in this window. We can selected command from this window with the mouse and execute it in the command window by double-clicking on it. We can also select a set of commands from this window and create an M-file with the right click of the mouse (and selecting the suitable option from the menu).</p>
+                        <span><b>Docking and Undocking Windows</b></span>
+                        <p>MATLAB windows such as the Command Window, the Edit Window, and Figure Windows can either be docked to the desktop, or they can be undocked. When a window is docked, it occurs as a pane within the MATLAB desktop. When it is undocked, it occurs as an independent window on the computer screen separate from the desktop. When a window is docked to the desktop, the upper right-hand corner includes a small button with an arrow pointing up and to the right ↑ . If this button is clicked, the window will become an independent window. When the window is an independent window, the upper right-hand corner includes a small button with an arrow pointing down and to the right ↓. .If this button is clicked, the window will be re-docked with the desktop.</p>
+                        <span><b>Figure Window</b></span>
+                        <p>The output of all graphics commands we copied in the command window is flushed to the graphics or figure window, a separate gray window with (default) white background color. The client can create as many figure windows as the system memory will allow.</p>
+                    </p>
+                    <h4 id="three">Variables and arrays, scalar and array operation</h4><br>
+                    <h4>Variables and arrays</h4>
+                    <b>Variables</b>
+                    <p>
+                        A variable in simple terms is a storage place that has some memory allocated to it. Basically, a variable used to store some form of data. Different types of variables require different amounts of memory and have some specific set of operations that can be applied to them. The Matlab workspace store all the variables that you create or use during a session. <br>
+                        To create a variable enter the name of the variable in the command window, followed by an = operator, and then assign it some values.
+                        <div class="borderr">
+                           
+                            a=10;<br>
+                            b=10;  <br>                          
+                            num=10;<br>                       
+                            sum=100;<br>
+                        </div>
+                        To display the content of the Matlab variable you just need to type the name of the variable, and it will show its content on Command-Line.
+                    </p>
+                    <b>Arrays</b>
+                    <p>
+                        An array is a collection of numbers or string of characters stored in the memory. Each element is an array that has an index number and indexing starts from 0th position and can be referred to as the first element in an array. In Matlab, we use an array which can collect numbers and can be accessed using an index. There are various special functions present in Matlab to perform operations in array-like zeroes(), diag(), ones(), etc.<br>
+                        EX:
+                        <div class="borderr">
+                            >> array = [0, 1, 4, 5]<br>
+                            array =<br>
+                                &emsp;0     1     4     5
+                        </div>
+                    </p>
+                    <h4>scalar and array operation</h4>
+                    <b>Scalar operation</b><br>
+                    <p>
+                        When you add, subtract, multiply or divide a matrix by a number, this is called the scalar operation.<br>
+                        Scalar operations produce a new matrix with same number of rows and columns with each element of the original matrix added to, subtracted from, multiplied by or divided by the number.<br>
+                        Example:<br>
+                        <div class="borderr">
+                            a = [ 10 12 23 ; 14 8 6; 27 8 9];<br>
+                            b = 2;<br>
+                            c = a + b<br>
+                            d = a - b<br>
+                            e = a * b<br>
+                            f = a / b
+                        </div>
+                        When you run the file, it displays the following result −
+                        <div class="borderr">
+                            c =<br>
+                            &emsp;&emsp;12    14    25<br>
+                            &emsp;&emsp;16    10     8<br>
+                            &emsp;&emsp;29    10    11<br>
+                            d =<br>
+                            &emsp;&emsp;8    10    21<br>
+                            &emsp;&emsp;12     6     4<br>
+                            &emsp;&emsp;25     6     7<br>
+                            e =<br>
+                            &emsp;&emsp;20    24    46<br>
+                            &emsp;&emsp;28    16    12<br>
+                            &emsp;&emsp;54    16    18<br>
+                            f =<br>
+                            &emsp;&emsp;5.0000    6.0000   11.5000<br>
+                            &emsp;&emsp;7.0000    4.0000    3.0000<br>
+                            &emsp;&emsp;13.5000    4.0000    4.5000
+                        </div>
+                    </p>
+                    <b>Array operation</b><br>
+                    <p>
+                        Array operations execute element by element operations on corresponding elements of vectors, matrices, and multidimensional arrays. If the operands have the same size, then each element in the first operand gets matched up with the element in the same location in the second operand. If the operands have compatible sizes, then each input is implicitly expanded as needed to match the size of the other. For more information, see Compatible Array Sizes for Basic Operations.
+                        <table class="table">
+                            
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>
+                                        <p>Operator</p>
+                                    </th><th><p>Purpose</p></th>
+                                    <th><p>Description</p></th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p><code class="literal">+</code></p></td><td><p>Addition</p></td><td><p><code class="literal">A+B</code> adds <code class="literal">A</code> and
+                            <code class="literal">B</code>.</p></td>
+                        </tr>
+                            <tr>
+                                <td><p><code class="literal">+</code></p></td><td><p>Unary plus</p></td><td><p><code class="literal">+A</code> returns
+                    <code class="literal">A</code>.</p></td>
+                </tr>
+                <tr><td><p><code class="literal remove_text_wrapping">-</code></p></td><td><p>Subtraction</p></td><td><p><code class="literal">A-B</code> subtracts <code class="literal">B</code> from
+                            <code class="literal">A</code></p></td>
+                        </tr>
+                        <tr>
+                            <td><p><code class="literal remove_text_wrapping">-</code></p></td><td><p>Unary minus</p></td><td><p><code class="literal remove_text_wrapping">-A</code> negates the elements of
+                            <code class="literal">A</code>.</p></td>
+                        </tr>
+                            <tr><td><p><code class="literal">.*</code></p></td><td><p>Element-wise multiplication</p></td><td><p><code class="literal">A.*B</code> is the element-by-element product
+                        of <code class="literal">A</code> and <code class="literal">B</code>.</p></td>
+                       
+                        </tr><tr><td><p><code class="literal">.^</code></p></td><td><p>Element-wise power</p></td><td><p><code class="literal">A.^B</code> is the matrix with elements
+                            <code class="literal">A(i,j)</code> to the <code class="literal">B(i,j)</code>
+                        power.</p></td>
+                    </tr>
+                    <tr><td><code class="literal">./</code></td><td><p>Right array division</p></td><td><p><code class="literal">A./B</code> is the matrix with elements
+                            <code class="literal">A(i,j)/B(i,j)</code>.</p></td>
+                        </tr>
+                        <tr><td><p><code class="literal">.\</code></p></td><td><p>Left array division</p></td><td><p><code class="literal">A.\B</code> is the matrix with elements
+                            <code class="literal">B(i,j)/A(i,j)</code>.</p></td>
+                        </tr>
+                        <tr><td><p><code class="literal">.'</code></p></td><td><p>Array transpose</p></td><td><p><code class="literal">A.'</code> is the array transpose of
+                            <code class="literal">A</code>. For complex matrices, this does not
+                        involve conjugation.</p></td>
+                    </tr></tbody></table>
+                    </p>
+                        
+                    <h4 id="four">MATLAB operator, Multidimensional array, Introduction to 
+                        M function programming </h4><br>
+                    <h4>MATLAB operator</h4>
+                    <p>
+                        An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. MATLAB is designed to operate primarily on whole matrices and arrays. Therefore, operators in MATLAB work both on scalar and non-scalar data. MATLAB allows the following types of elementary operations −<br>
+                        <ul >
+                            <li>Arithmetic Operators</li>
+                            <li>Relational Operators</li>
+                            <li>Logical Operators</li>
+                            <li>Bitwise Operations</li>
+                            <li>Set Operations</li>
+                        </ul>
+                    </p>    
+                    <b>MATLAB Arithmetic Operators</b>      
+                    <p>
+                        <table class="table">
+                            <thead class="table-dark">
+                            <tr>
+                            <th>Symbol</th>
+                            <th>Description</th>
+                            
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>+</td>
+                            <td>Unary plus</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>-</td>
+                            <td>Subtraction</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>-</td>
+                            <td>Unary minus</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>.*</td>
+                            <td>Element-wise multiplication</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>*</td>
+                            <td>Matrix multiplication</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>./</td>
+                            <td>Element-wise right division</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>.\</td>
+                            <td>Element-wise left division</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>/</td>
+                            <td>Matrix right division</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>\</td>
+                            <td>Matrix left division</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>.^</td>
+                            <td>Element-wise power</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>^</td>
+                            <td>Matrix power</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>.'</td>
+                            <td>Transpose</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>'</td>
+                            <td>Complex conjugate transpose</td>
+                           
+                            </tr>
+                            </tbody></table>
+                    </p>  
+                    <b>MATLAB Relational Operators</b>    
+                    <p>
+                        Relational operators perform value comparison operations.<br>
+                        <table class="table">
+                            <thead class="table-dark"><tr>
+                            <th>Symbol</th>
+                            <th>Role</th>
+                            
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>==</td>
+                            <td>Equal to</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>~=</td>
+                            <td>Not equal to</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>&gt;</td>
+                            <td>Greater than</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>&gt;=</td>
+                            <td>Greater than or equal to</td>
+                            
+                            </tr>
+                            <tr>
+                            <td>&lt;</td>
+                            <td>Less than	lt</td>
+                            </tr>
+                            <tr>
+                            <td>&lt;=</td>
+                            <td>Less than or equal to</td>
+                            
+                            </tr>
+                            </tbody></table>
+                    </p>    
+                    <b>MATLAB Logical Operators</b>
+                    <p>
+                        Logical operators perform logical operations and output the result in Boolean state true or false using the numbers 1 and 0, respectively.<br>
+                        MATLAB offer three types of logical operators and functions:
+                        <ul >
+                            <li><strong>Element-wise:</strong> It works on corresponding elements of logical arrays. </li>
+                            <li><strong>Bit-wise:</strong> It works on corresponding bits of integer values or arrays. </li>
+                            <li><strong>Short-circuit:</strong> It works on scalar, logical expressions.</li>
+                        </ul>
+                        The values returned by MATLAB logical operators and functions, with the exception of bit-wise functions, are of type logical and are suitable for use with logical indexing.
+                    </p>
+                    <b>Bit-Wise Operator</b>
+                    <p>
+                        The following functions execute bit-wise logical operations on nonnegative integer inputs. Inputs may be scalar or in arrays. If in arrays, these operations produce a like-sized output array.<br>
+                        <table class="table">
+                            <thead class="table-dark"><tr>
+                            <th>Function</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>bitand</td>
+                            <td>It returns the bit-wise AND of two nonnegative integer arguments.</td>
+                            <td>bitand(A,B) = 20<br>
+                            (binary 10100)</td>
+                            </tr>
+                            <tr>
+                            <td>bitor</td>
+                            <td>It returns the bit-wise OR of two nonnegative integer arguments.</td>
+                            <td>bitor(A,B) = 29<br>
+                            (binary 11101)</td>
+                            </tr>
+                            <tr>
+                            <td>bitcmp</td>
+                            <td>It returns the bit-wise complement as an n-bit number, where n is the second input argument to bitcmp.</td>
+                            <td>bitcmp(A,5) = 3 <br>
+                            (binary 00011)</td>
+                            </tr>
+                            <tr>
+                            <td>bitxor</td>
+                            <td>It returns the bit-wise exclusive OR of two nonnegative integer arguments.</td>
+                            <td>bitxor(A,B) = 9 <br>
+                            (binary 01001)</td>
+                            </tr>
+                            </tbody></table>
+                    </p>
+                    <b>Set Operations</b>
+                    <p>
+                        MATLAB provides various functions for set operations, like union, intersection and testing for set membership, etc.
+                        <table class="table table-bordered">
+                            <thead class="table-dark">
+                            <tr>
+                            <th>Function</th>
+                            <th style="text-align:center;"> Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                           
+                            <td>intersect(A,B)</td>
+                            <td>
+                            <p>Set intersection of two arrays; returns the values common to both A and B. The values returned are in sorted order.</p></td>
+                            </tr>
+                            <tr>
+                            <td >intersect(A,B,'rows')</td>
+                            <td>
+                            <p>Treats each row of A and each row of B as single entities and returns the rows common to both A and B. The rows of the returned matrix are in sorted order.</p></td>
+                            </tr>
+                            <tr>
+                            <td >ismember(A,B)</td>
+                            <td>
+                            <p>Returns an array the same size as A, containing 1 (true) where the elements of A are found in B. Elsewhere, it returns 0 (false).</p></td>
+                            </tr>
+                            <tr>
+                            <td>ismember(A,B,'rows')</td>
+                            <td>
+                            <p>Treats each row of A and each row of B as single entities and returns a vector containing 1 (true) where the rows of matrix A are also rows of B. Elsewhere, it returns 0 (false).</p></td>
+                            </tr>
+                            <tr>
+                            <td>issorted(A)</td>
+                            <td>
+                            <p>Returns logical 1 (true) if the elements of A are in sorted order and logical 0 (false) otherwise. Input A can be a vector or an N-by-1 or 1-by-N cell array of strings. <b>A is considered to be sorted if A</b> and the output of sort(A) are equal.</p></td>
+                            </tr>
+                            <tr>
+                            <td>issorted(A, 'rows')</td>
+                            <td>
+                            <p>Returns logical 1 (true) if the rows of two-dimensional matrix A is in sorted order, and logical 0 (false) otherwise. <b>Matrix A is considered to be sorted if A</b> and the output of sortrows(A) are equal.</p></td>
+                            </tr>
+                            <tr>
+                            <td>setdiff(A,B)</td>
+                            <td>
+                            <p>Sets difference of two arrays; returns the values in A that are not in B. The values in the returned array are in sorted order.</p></td>
+                            </tr>
+                            <tr>
+                            <td>setdiff(A,B,'rows')</td>
+                            <td>
+                            <p>Treats each row of A and each row of B as single entities and returns the rows from A that are not in B. The rows of the returned matrix are in sorted order.</p>
+                            <p>The 'rows' option does not support cell arrays.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>setxor</td>
+                            <td>
+                            <p>Sets exclusive OR of two arrays</p></td>
+                            </tr>
+                            <tr>
+                            <td>union</td>
+                            <td>
+                            <p>Sets union of two arrays</p></td>
+                            </tr>
+                            <tr>
+                            <td>unique</td>
+                            <td>
+                            <p>Unique values in array</p></td>
+                            </tr>
+                            </tbody></table>
+                    </p>
+                    <h4>Multidimensional array</h4>
+                    </p>
+                    Arrays with more than two dimensions are called multi-dimensional arrays.
+                    Multi-dimensional arrays are created with more than two subscripts in MATLAB.
+                    For example:
+                    <ul class="points">
+                        <li>Let's create a three-dimensional array using function ones (3, 8, 3).</li>
+                        <li>This function creates a 3-by-8-by-3 array with a total of 3*8*3 = 72 elements. </li>
+                        <li>The third subscript tells to create no. of sets of elements in rows and columns as per first &amp; second subscripts.</li>
+                        </ul>
+                        <div style="text-align: center">
+                            <img src="https://static.javatpoint.com/tutorial/matlab/images/multi-dimensional-arrays-in-matlab.png" class="img-fluid"><br>
+                        </div>
+                    </p>
+                    <h4>Introduction to M function programming</h4>
+                    <p></p>
+                           
+                   
+                  
+                   
+                </div>
+            </div>
+        </div>
+        <script>
+             document.getElementById("back").setAttribute("href","imageprocessingL.html");
+        </script>
+        <script src="main.js" type="text/javascript"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        		
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    </body>
+</html>

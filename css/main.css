@@ -1,0 +1,22 @@
+ body{
+          font-family: cursive;;
+          font-size: 18px;
+          background-color: azure;
+       height:100vh;
+      }
+      @media all and (max-width:520px){
+          body{
+              font-size:16px;
+          }
+      }
+h4{
+     color:mediumblue;
+    /* font-weight:400; */
+    }
+    
+    .heading{
+        text-align:center;
+        color:#ff0090;
+        /* margin-bottom: 10px; */
+    }
+

@@ -1,0 +1,30 @@
+.contentp .fa-hand-point-right{
+margin-right:10px;
+
+}
+.contenta:hover{
+    color:#ff0090;
+    cursor:pointer;
+}
+.contenta{
+    text-decoration :none;
+    color:black;
+}
+.contentaa{
+    text-decoration :none;
+    color:black;
+}
+.contentaa:hover{
+    text-decoration :none;
+    color:black;
+}
+.card{
+    margin-bottom: 10px;
+    border:1px solid black;
+    /* text-align: center; */
+}
+.back{
+    text-align:center;
+    /* padding:0px 10%; */
+    margin:10px;
+}

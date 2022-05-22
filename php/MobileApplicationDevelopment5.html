@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+			
+			
+<script src="https://kit.fontawesome.com/ffbe392e20.js" crossorigin="anonymous"></script>
+<?php
+include('backbutton.php');
+ ?>
+		<?php include('navbar.php'); ?>
+        <link href="../css/content.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/border.css" rel="stylesheet">
+         <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/upbutton.css" rel="stylesheet">
+			</head>
+				
+			
+        <body>	
+            <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <a class="nav-title aa" id="back">
+        Back
+      </a>
+      <div class="nav-title">
+        YMN
+      </div>
+    </div>
+    <div class="nav-btn" id="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  
+  <div class="nav-links" id="nav-links">
+
+    <a href="MobileApplicationDevelopmentL.html" class="aa">Mobile Development</a>
+    <a href="imageprocessingL.html" class="aa">Digital Image Processing</a>
+    <a href="LinuxL.html" class="aa">Linux Administration</a>
+    <a href="NetworkingL.html" class="aa">Networking Essentials</a>
+  </div>
+</div>
+<a href="#start"><div class="topp" title="top">
+            <span>
+            <i class="fa fa-solid fa-arrow-up"></i>
+                </span>
+</div></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading" id="start">MENUS, SMS &  LOCATION-BASED SERVICES </h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="title"> <span>Content</span></h3>                             
+                                <a href="#one" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Localization </p></a>
+                                <a href="#two" class="contentaa"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Creating the Helper Methods, Options menu and Context menu </p></a>
+                                <a href="#three" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Dialogs- Alert dialog </p></a>
+                                <a href="#four" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>SMS Messaging</p></a>
+                                <a href="#five" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Using a Content Provider</p></a>
+                                <a href="#six" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Lists view</p></a>
+                                <a href="#seven" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Displaying Maps , Getting Location Data</p></a>
+                               <a href="#ten" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Monitoring a Location using GPS</p></a>
+                                
+                                
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12">
+                    <h4 id="one">Localization</h4>
+                    <p>
+                    An android application can run on many devices in many different regions. In order to make your application more interactive, your application should handle text,numbers,files e.t.c in ways appropriate to the locales where your application will be used.<br>
+                    <b>Localizing Strings</b><br>
+                    In order to localize the strings used in your application , make a new folder under res with name of values-local where local would be the replaced with the region.
+
+                    For example, in the case of italy, the values-it folder would be made under res. It is shown in the image below −
+                    <div style="text-align: center">
+                        <img src="https://www.tutorialspoint.com/android/images/string.jpg" class="img-fluid" ><br>
+                    </div>
+                    Once that folder is made, copy the strings.xmlfrom default folder to the folder you have created. And change its contents. For example, i have changed the value of hello_world string.<br>
+                    Italy, res/values-it/strings.xml<br>
+                    <div class="borderr">
+                        <;?xml version="1.0" encoding="utf-8"?><br>
+                        < resources ><br>
+                           < string name="hello_world">Ciao mondo!</ string ><br>
+                        </ resources > 
+                    </div>
+                    we can change it to many more languages.
+                    </p>
+                    <h4 id="two">Creating the Helper Methods, Options menu and Context menu</h4>
+                    <h4>Creating the Helper Methods</h4><br>
+                    <p>
+                        A helper method is used to perform a particular repetitive task common across multiple classes. This keeps us from repeating the same piece of code in different classes again n again. Whereas the class-specific methods define its behaviour, the helper methods assist in that process. You can think of Integer.parseInt() as a helper method that we have been using across multiple classes irrespective of their independent behaviour.<br>
+
+                        Helper methods are often declared as public static so they can be invoked with the class name like Classname.method(). For example, below I have created a HelperMethods class which consists of helper methods that I can use across multiple classes. I have created another Test class and used the HelperMethods.preMr() helper method to prepend "Mr." to the name. I can create more classes if I want to and use the same helper methods with them. One can even build a custom library of functions that can be used in any project due to its generic nature.
+                    </p>
+                    <h4>Options menu</h4><br>
+                    <p>
+                        Android Option Menus are the primary menus of android. They can be used for settings, search, delete item etc.<br>
+
+                        Here, we are going to see two examples of option menus. First, the simple option menus and second, options menus with images.<br>
+
+                        Here, we are inflating the menu by calling the inflate() method of MenuInflater class. To perform event handling on menu items, you need to override onOptionsItemSelected() method of Activity class.
+                        <div style="text-align: center">
+                            <img src="https://static.javatpoint.com/androidpages/images/optionmenu2.png" class="img-fluid" ><br>
+                        </div>
+                    </p>
+                    <h4>Context menu</h4><br>
+                    <p>
+                        Android context menu appears when user press long click on the element. It is also known as floating menu.<br>
+
+                        It affects the selected content while doing action on it.<br>
+
+                        It doesn't support item shortcuts and icons.
+                        <div style="text-align: center">
+                            <img src="https://static.javatpoint.com/images/androidimages/context2.png" class="img-fluid" ><br>
+                        </div>
+                    </p><br>
+                    <h4 id="three">Dialogs- Alert dialog</h4>
+                    <p>
+                        Android AlertDialog can be used to display the dialog message with OK and Cancel buttons. It can be used to interrupt and ask the user about his/her choice to continue or discontinue.<br>
+
+Android AlertDialog is composed of three regions: title, content area and action buttons.<br>
+
+Android AlertDialog is the subclass of Dialog class.<br>
+                        Methods of AlertDialog class<br>
+                        <table class="table">
+<thead class="table-dark">
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+    </tr>
+      </thead>                      <tbody>
+<tr><td>public AlertDialog.Builder setTitle(CharSequence)</td><td>This method is used to set the title of AlertDialog.</td></tr>
+<tr><td>public AlertDialog.Builder setMessage(CharSequence)</td><td>This method is used to set the message for AlertDialog.</td></tr>
+<tr><td>public AlertDialog.Builder setIcon(int)</td><td>This method is used to set the icon over AlertDialog.</td></tr>
+</tbody></table>
+                        <div style="text-align: center">
+                            <img src="https://static.javatpoint.com/androidpages/images/alertdialog2.png" class="img-fluid" ><br>
+                        </div>
+                                        
+                    </p>
+                    <h4 id="four">SMS Messaging </h4>
+                    <p>We can send sms in android via intent. You need to write only 4 lines of code the send sms in android<br>
+                        <div class="borderr">
+                        //Getting intent and PendingIntent instance  <br>
+Intent intent=new Intent(getApplicationContext(),MainActivity.class); <br> 
+PendingIntent pi=PendingIntent.getActivity(getApplicationContext(), 0, intent,0);  <br>
+                            <br>
+                            //Get the SmsManager instance and call the sendTextMessage method to send message                 <br>
+                            SmsManager sms=SmsManager.getDefault();  <br>
+sms.sendTextMessage("8802177690", null, "hello javatpoint", pi,null);  
+                        </div>
+                    </p>
+                  
+                  
+                    <h4 id="five">Using a Content Provider</h4><br>
+                   <p>
+                        A content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. A content provider can use different ways to store its data and the data can be stored in a database, in files, or even over a network.
+                       <div style="text-align: center">
+                            <img src="https://www.tutorialspoint.com/android/images/content.jpg" class="img-fluid" ><br>
+                        </div>
+        sometimes it is required to share data across applications. This is where content providers become very useful.<br>
+        Content providers let you centralize content in one place and have many different applications access it as needed. A content provider behaves very much like a database where you can query it, edit its content, as well as add or delete content using insert(), update(), delete(), and query() methods. In most cases this data is stored in an SQlite database.
+                    </p>
+                   
+                    <h4 id="six">Lists view</h4>
+                    <p>
+                       Android ListView is a view which contains the group of items and displays in a scrollable list. ListView is implemented by importing android.widget.ListView class. ListView is a default scrollable which does not use other scroll view.<br>
+
+ListView uses Adapter classes which add the content from data source (such as string array, array, database etc) to ListView. Adapter bridges data between an AdapterViews and other Views (ListView, ScrollView etc). 
+                        <br>Example of ListView<br>
+                        Structure of listview project<br>
+                        <div style="text-align: center">
+                            <img src="https://static.javatpoint.com/images/androidimages/listview1.png" class="img-fluid" ><br>
+                        </div>
+                    </p>  <br>   
+                    <h4 id="seven">Displaying Maps , Getting Location Data</h4>
+                    <h4>Displaying Maps</h4><br>
+                    <p>
+                        Android provides facility to integrate Google map in our application. Google map displays your current location, navigate location direction, search location etc. We can also customize Google map according to our requirement.<br>
+                        <b>Types of Google Maps</b><br>
+                        There are four different types of Google maps, as well as an optional to no map at all. Each of them gives different view on map. These maps are as follow:
+                        <ol >
+<li><strong>Normal:</strong> This type of map displays typical road map, natural features like river and some features build by humans.</li>
+<li><strong>Hybrid:</strong> This type of map displays satellite photograph data with typical road maps. It also displays road and feature labels.</li>
+<li><strong>Satellite:</strong> Satellite type displays satellite photograph data, but doesn't display road and feature labels. </li>
+<li><strong>Terrain:</strong> This type displays photographic data. This includes colors, contour lines and labels and perspective shading.</li>
+<li><strong>None:</strong> This type displays an empty grid with no tiles loaded.</li>
+</ol>
+Syntax of different types of map<br>
+<div class="borderr">
+    googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);<br>
+    googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID); <br> 
+googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE); <br> googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);  <br>
+</div><br>
+<div style="text-align: center">
+                            <img src="https://static.javatpoint.com/images/androidimages/google-map7.png" class="img-fluid" ><br>
+                        </div>
+                    </p>
+<!--
+                    <h4>Getting Location Data</h4><br>
+                    <p>
+                    
+                    </p>
+-->
+<!--
+                    <h4 id="eight">Monitoring a Location using GPS</h4>
+                    <p>
+                       <b>Activate GPS Monitoring for Android</b>
+                        <span>Step 1: Allow GPS permissions</span>
+                    </p> 
+-->
+                   
+                </div>
+            </div>
+        </div>
+        <script>
+             document.getElementById("back").setAttribute("href","MobileApplicationDevelopmentL.html");
+        </script>
+<script src="main.js" type="text/javascript"></script>
+		
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+						
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  				
+		</body>
+	</html>

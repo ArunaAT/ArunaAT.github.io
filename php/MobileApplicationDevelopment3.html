@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+			
+			
+<script src="https://kit.fontawesome.com/ffbe392e20.js" crossorigin="anonymous"></script>
+<?php
+include('backbutton.php');
+ ?>
+		<?php include('navbar.php'); ?>
+        <link href="../css/content.css" rel="stylesheet">
+        
+     
+ <link href="../css/main.css" rel="stylesheet">
+         <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/upbutton.css" rel="stylesheet">
+			</head>
+			<style>
+                #bodyy{
+                    min-height:100vh;
+                    overflow:auto;
+                }
+            </style>	
+		<script src="main.js" type="text/javascript"></script>	
+        <body id="bodyy">	
+          <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <a class="nav-title aa" id="back">
+        Back
+      </a>
+      <div class="nav-title">
+        YMN
+      </div>
+    </div>
+    <div class="nav-btn" id="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  
+  <div class="nav-links" id="nav-links">
+
+    <a href="MobileApplicationDevelopmentL.html" class="aa">Mobile Development</a>
+    <a href="imageprocessingL.html" class="aa">Digital Image Processing</a>
+    <a href="LinuxL.html" class="aa">Linux Administration</a>
+    <a href="NetworkingL.html" class="aa">Networking Essentials</a>
+  </div>
+</div>
+<a href="#start"><div class="topp" title="top">
+            <span>
+            <i class="fa fa-solid fa-arrow-up"></i>
+                </span>
+</div></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading" id="start">ACTIVITIES, FRAGMENTS, AND INTENTS </h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="title"> <span>Content</span></h3>                             
+                                <a href="#one" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Understanding Activities</p></a>
+                                <a href="#three" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Intents</p></a>
+                                <a href="#four" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Linking Activities Using Intents</p></a>
+                                <a href="#five" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Activity life cycle </p></a>
+                                <a href="#six" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Fragments</p></a>
+                                
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12">
+                    <h4 id="one">Understanding Activities</h4>
+                    <p>
+                        The mobile-app experience differs from its desktop counterpart in that a user's interaction with the app doesn't always begin in the same place. Instead, the user journey often begins non-deterministically. For instance, if you open an email app from your home screen, you might see a list of emails. By contrast, if you are using a social media app that then launches your email app, you might go directly to the email app's screen for composing an email.<br>
+
+                        The Activity class is designed to facilitate this paradigm. When one app invokes another, the calling app invokes an activity in the other app, rather than the app as an atomic whole. In this way, the activity serves as the entry point for an app's interaction with the user. You implement an activity as a subclass of the Activity class.<br>
+
+                        An activity provides the window in which the app draws its UI. This window typically fills the screen, but may be smaller than the screen and float on top of other windows. Generally, one activity implements one screen in an app. For instance, one of an app’s activities may implement a Preferences screen, while another activity implements a Select Photo screen.<br>
+
+                        Most apps contain multiple screens, which means they comprise multiple activities. Typically, one activity in an app is specified as the main activity, which is the first screen to appear when the user launches the app. Each activity can then start another activity in order to perform different actions. For example, the main activity in a simple e-mail app may provide the screen that shows an e-mail inbox. From there, the main activity might launch other activities that provide screens for tasks like writing e-mails and opening individual e-mails.<br>
+
+                        Although activities work together to form a cohesive user experience in an app, each activity is only loosely bound to the other activities; there are usually minimal dependencies among the activities in an app. In fact, activities often start up activities belonging to other apps. For example, a browser app might launch the Share activity of a social-media app.<br>
+
+                        To use activities in your app, you must register information about them in the app’s manifest, and you must manage activity lifecycles appropriately. The rest of this document introduces these subjects.<br>
+                    </p>
+                    <h4 id="two">Intents</h4>
+                    <p>
+                        In Android, it is quite usual for users to witness a jump from one application to another as a part of the whole process, for example, searching for a location on the browser and witnessing a direct jump into Google Maps or receiving payment links in Messages Application (SMS) and on clicking jumping to PayPal or GPay (Google Pay). This process of taking users from one application to another is achieved by passing the Intent to the system. Intents, in general, are used for navigating among various activities within the same application, but note, is not limited to one single application, i.e., they can be utilized from moving from one application to another as well. <br><br>
+
+                        Intents could be Implicit, for instance, calling intended actions and explicit as well, such as opening another activity after some operations like onClick or anything else. Below are some application of Intents:<br>
+                        1. Sending the User to Another App<br>
+                        2. Getting a Result from an Activity<br>
+                        3. Allowing Other Apps to Start Your Activity<br><br>
+                        <b>Some Important Method of Intent and its Description</b><br>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Methods</th>
+                                    <th scope="col">Description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Context.startActivity()</td>
+                                    <td>
+                                        This is to launch a new activity or get an existing activity to be action.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>Context.startService()</td>
+                                    <td>
+                                        This is to start a new service or deliver instructions for an existing service.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>Context.sendBroadcast()</td>
+                                    <td>
+                                        This is to deliver the message to broadcast receivers.
+                                    </td>                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>Types of Android Intents</b><br>
+                        There are two types of intents in android: <br>
+                        1. Implicit.<br>
+                        2. Explicit.<br><br>
+                        <b>1. Implicit Intent</b><br>
+                        Implicit Intent doesn’t specify the component. In such a case, intent provides information on available components provided by the system that is to be invoked.<br>
+                        <b>2. Explicit Intent</b><br>
+                        Explicit Intent specifies the component. In such a case, intent provides the external class to be invoked.<br>
+                    </p>
+                    <h4 id="three">Linking Activities Using Intents</h4>
+                    <p>
+                        <b>Start an Activity with an explicit intent:</b>
+                        <ul>
+                            <li>To start a specific activity, use an explicit intent</li>
+                            <li>Create an intent</li>
+                        </ul>
+                        Intent intent = new Intent(this, ActivityName.class);
+                        <ul>
+                            <li>Use the intent to start the activity</li>
+                            <li>startActivity(intent);</li>
+                        </ul>
+                       
+                        
+                        
+                        <b>Start an Activity with implicit intent:</b>
+                        <ul>
+                        <li>To ask Android to find an Activity to handle your request, use an implicit intent</li>
+                        <li>Create an intent</li>
+                        </ul>
+                        Intent intent = new Intent(action, uri);
+                        <ul>
+                            <li>Use the intent to start the activity</li>
+                            <li>startActivity(intent);</li>
+                        </ul>
+                        Examples<br><br>
+                        Show a web page<br>
+                        <div  style="border:2px solid black">
+                            Uri uri = Uri.parse("http://www.google.com");<br>
+                            Intent it = new Intent(Intent.ACTION_VIEW,uri);<br>                                                        
+                            startActivity(it);<br>
+                        </div><br>
+                        Dial a phone number<br>
+                        <div style="border:2px solid black">
+                            Uri uri = Uri.parse("tel:8005551234");<br>
+                            Intent it = new Intent(Intent.ACTION_DIAL, uri);<br>
+                            startActivity(it);<br>
+                        </div>
+                    </p>
+                    <p>
+                        All activities are managed by the Android runtime.Started by an "intent", a message to the Android runtime to run an activity.
+                        <div style="text-align: center">
+                            <img src="https://majyori.com/mad/images/How-Activities-Run.png" class="img-fluid"><br>
+                        </div>
+                    </p>
+                    <h4 id="five">Activity life cycle</h4>
+                    <p>
+                        An activity represents a single screen with a user interface just like window or frame of Java.Android activity is the subclass of ContextThemeWrapper class.<br>
+                        <div style="text-align: center">
+                            <img src="https://www.tutorialspoint.com/android/images/activity.jpg" class="img-fluid"><br>
+                        </div>
+                          The Activity class defines the following call backs i.e. events. You don't need to implement all the callbacks methods. However, it's important that you understand each one and implement those that ensure your app behaves the way users expect.<br><br>
+                          <table class="table">
+                            <thead class="table-dark">
+                                <tr style="text-align: center;">
+                                    <th scope="col">Sr.No</th>
+                                    <th scope="col">Callback & Description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><b>onCreate()</b><br>
+                                        This is the first callback and called when the activity is first created.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><b>onStart()</b><br>
+                                        This callback is called when the activity becomes visible to the user.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><b>onResume()</b><br>
+                                        This is called when the user starts interacting with the application.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><b>onPause()</b><br>
+                                        The paused activity does not receive user input and cannot execute any code and called when the current activity is being paused and the previous activity is being resumed.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><b>onStop()</b><br>
+                                        This callback is called when the activity is no longer visible.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><b>onDestroy()</b><br>
+                                        This callback is called before the activity is destroyed by the system.
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><b>onRestart()</b><br>
+                                        This callback is called when the activity restarts after stopping it.
+                                    </td>                                    
+                                </tr>
+                            </tbody>
+                          </table>
+                    </p>
+                    <h4 id="six"> Fragments</h4>
+                    <p>
+                        Android Fragment is the part of activity, it is also known as sub-activity. There can be more than one fragment in an activity. Fragments represent multiple screen inside one activity.<br>
+                        Android fragment lifecycle is affected by activity lifecycle because fragments are included in activity.<br>
+                        Each fragment has its own life cycle methods that is affected by activity life cycle because fragments are embedded in activity.<br>
+                        The FragmentManager class is responsible to make interaction between fragment objects.<br>
+                        <b>Android Fragment Lifecycle</b>
+                        The lifecycle of android fragment is like the activity lifecycle. There are 12 lifecycle methods for fragment.
+                        <div style="text-align: center">
+                            <img src="https://static.javatpoint.com/images/androidimages/fragmentlifecycle.png" class="img-fluid"><br>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+             document.getElementById("back").setAttribute("href","MobileApplicationDevelopmentL.html");
+        </script>
+
+		
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+						
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  				
+		</body>
+	</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    
+   
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     
+    
+     <script src="https://kit.fontawesome.com/ffbe392e20.js" crossorigin="anonymous"></script>
+     <?php
+             include('backbutton.php');
+              ?>
+        <?php include('navbar.php'); ?>
+        <link href="../css/content.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/border.css" rel="stylesheet">
+     <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/upbutton.css" rel="stylesheet">
+        <style>
+           
+            
+            #bodyy{
+                /* padding:20px; */
+                text-align: justify;
+            }
+            .heading{
+                text-align:center;
+                color:#ff0090;
+                margin-bottom: 10px;
+            }
+            ol li span{
+                color:black;
+                font-weight: bold;
+            }
+            .content{
+                text-align: center;
+            }
+
+        </style>
+
+        </head>
+            
+        
+    <body id="bodyy">	
+        <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <a class="nav-title aa" id="back">
+        Back
+      </a>
+      <div class="nav-title">
+        YMN
+      </div>
+    </div>
+    <div class="nav-btn" id="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  
+  <div class="nav-links" id="nav-links">
+
+    <a href="MobileApplicationDevelopmentL.html" class="aa">Mobile Development</a>
+    <a href="imageprocessingL.html" class="aa">Digital Image Processing</a>
+    <a href="LinuxL.html" class="aa">Linux Administration</a>
+    <a href="NetworkingL.html" class="aa">Networking Essentials</a>
+  </div>
+</div>
+        <a href="#start"><div class="topp" title="top">
+            <span>
+            <i class="fa fa-solid fa-arrow-up"></i>
+                </span>
+            </div></a>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading" id="start">Intensity Transformation and spatial filtering 
+techniques Representation</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="title"> <span>Content</span></h3>
+                            <!-- <p class="description"> -->
+                                
+                                    <a href="#one" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Background, basic intensity transformation function using 
+imadjust()</p></a>
+                                    <a href="#two" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Histogram processing and function plotting, histogram 
+equalization, histogram type </p></a>
+                                    <a href="#three" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Fundamentals of filtering, neighbourhood, </p></a>
+                                    <a href="#four" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Linear spatial filtering, Non linear spatial filtering, 
+fspecial() and imfilter(). </p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h4 id="one">Background, basic intensity transformation function using 
+imadust()</h4><br>
+                    <h4>Background</h4>
+                    <p>
+                        the part of a picture, scene, or design that forms a setting for the main figures or objects, or appears furthest from the viewer.<br>
+<!--
+                        <div style="text-align: center">
+                             <img src="https://i.pinimg.com/originals/6e/6b/96/6e6b9607bca5dd29823c36ef3ac0e197.gif" class="img-fluid"  ><br>
+                        </div>
+-->
+                    </p><br>
+                    <h4> basic intensity transformation function using 
+imadust()</h4>
+                    <p>
+                        Intensity transformations are applied on images for contrast manipulation or image thresholding. These are in the spatial domain, i.e. they are performed directly on the pixels of the image at hand, as opposed to being performed on the Fourier transform of the image.<br>
+
+The following are commonly used intensity transformations:<br>
+                        <ol><li><strong>Image Negatives (Linear)</strong></li><li><strong>Log Transformations</strong></li><li><strong>Power-Law (Gamma) Transformations</strong></li><li><strong>Piecewise-Linear Transformation Functions</strong></li></ol>
+<div style="text-align: center">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190721174818/log-transformation.png" class="img-fluid" ><br>
+                    </div>
+                    <b>Image Negatives –</b><br>
+
+ Mathematically, assume that an image goes from intensity levels 0 to (L-1). Generally, L = 256. Then, the negative transformation can be described by the expression s = L-1-r where r is the initial intensity level and s is the final intensity level of a pixel. This produces a photographic negative.<br>
+                    <b>Log Transformations –</b><br>
+                    Mathematically, log transformations can be expressed as s = clog(1+r). Here, s is the output intensity, r>=0 is the input intensity of the pixel, and c is a scaling constant. c is given by 255/(log (1 + m)), where m is the maximum pixel value in the image. It is done to ensure that the final pixel value does not exceed (L-1), or 255. Practically, log transformation maps a narrow range of low-intensity input values to a wide range of output values.<br>
+                   <b> Power-Law (Gamma) Transformation –</b><br>
+Power-law (gamma) transformations can be mathematically expressed as s = cr^{\gamma}. Gamma correction is important for displaying images on a screen correctly, to prevent bleaching or darkening of images when viewed from different types of monitors with different display settings. This is done because our eyes perceive images in a gamma-shaped curve, whereas cameras capture images in a linear fashion.<br>
+                  <b>
+                        Piecewise-Linear Transformation Functions –</b><br>
+These functions, as the name suggests, are not entirely linear in nature. However, they are linear between certain x-intervals. One of the most commonly used piecewise-linear transformation functions is contrast stretching.
+
+Contrast can be defined as:
+<div class="borderr">
+Contrast =  (I_max - I_min)/(I_max + I_min)
+    </div>  
+                    </p>
+
+                    
+                    
+                    </p><br>
+                    <h4 id="two">Histogram processing and function plotting, histogram 
+equalization, histogram type</h4>
+                    <h4>Histogram processing and function plotting</h4>
+           <p>
+               Let rk , fork = 0, 1, 2,…, L - 1,  denote  the  intensities  of  an  L-level  digital  image,
+f (x, y). The unnormalized histogram of f is defined as
+
+ 
+h(rk ) = nk
+ 
+for k = 0, 1, 2,…, L - 1
+ 
+(3-6)
+ 
+
+where nk is the number of pixels in f with intensity rk , and the subdivisions of the intensity scale are called histogram bins. Similarly, the normalized histogram of f is defined as
+ 
+p(rk) = h(rk )/MN = nk/MN
+ 
+
+
+where, as usual, M and N are the number of image rows and columns, respectively. Mostly, we work with normalized histograms, which we refer to simply as histograms or image histograms. The sum of p(rk ) for all values of k is always 1. The components of p(rk ) are estimates of the probabilities of intensity levels occurring in an image. As you will learn in this section, histogram manipulation is a fundamental tool in image processing. Histograms are simple to compute and are also suitable for fast hardware implementations, thus making histogram-based techniques a popular tool for real-time image processing.
+  <div style="text-align: center">
+                    <img src="../img1.png" class="img-fluid" ><br>
+                    </div>             
+Histogram shape is related to image appearance. For example, Fig shows images with four basic intensity characteristics: dark, light, low contrast, and high contrast; the image histograms are also shown. We note in the dark image that the most populated histogram bins are concentrated on the lower (dark) end of the intensity scale. Similarly, the most populated bins of the light image are biased toward the higher end of the scale. An image with low contrast has a narrow histogram located typically toward the middle of the intensity scale, as fig  shows. For a monochrome image, this implies a dull, washed-out gray look. Finally, we see that the components of the histogram of the high-contrast image cover a wide range of the intensity scale, and the distribution of pixels is not too far from uniform, with few bins being much higher than the others. Intuitively, it is reasonable to conclude that an image whose pixels tend to occupy the entire range of possible intensity lev- els and, in addition, tend to be distributed uniformly, will have an appearance of high contrast and will exhibit a large variety of gray tones. The net effect will be an image that shows a great deal of gray-level detail and has a high dynamic range
+ 
+
+            </p>
+        <h4>histogram 
+equalization</h4>
+        <p>
+            Histogram Equalization is a computer image processing technique used to improve contrast in images. It accomplishes this by effectively spreading out the most frequent intensity values, i.e. stretching out the intensity range of the image. This method usually increases the global contrast of images when its usable data is represented by close contrast values. This allows for areas of lower local contrast to gain a higher contrast.<br>
+            <div style="text-align: center">
+                    <img src="https://miro.medium.com/max/1260/1*GCQn_KaJobChuZknKEUvlw.png" class="img-fluid" ><br>
+                    </div> 
+        A color histogram of an image represents the number of pixels in each type of color component. Histogram equalization cannot be applied separately to the Red, Green and Blue components of the image as it leads to dramatic changes in the image’s color balance. However, if the image is first converted to another color space, like HSL/HSV color space, then the algorithm can be applied to the luminance or value channel without resulting in changes to the hue and saturation of the image.
+
+        </p>
+        
+        <h4>histogram type </h4>
+    <p>
+        The histogram can be classified into different types based on the frequency distribution of the data. There are different types of distributions, such as normal distribution, skewed distribution, bimodal distribution, multimodal distribution, comb distribution, edge peak distribution, dog food distribution, heart cut distribution, and so on. The histogram can be used to represent these different types of distributions. The different types of a histogram are:
+        <ul>
+<li><span style="font-weight: 400;">Uniform histogram</span></li>
+<li><span style="font-weight: 400;">Symmetric histogram</span></li>
+<li><span style="font-weight: 400;">Bimodal histogram</span></li>
+<li><span style="font-weight: 400;">Probability histogram&nbsp;</span></li>
+</ul>
+    
+    <span><b>Uniform Histogram</b></span>
+    <div style="text-align: center">
+                    <img src="https://miro.medium.com/max/1260/1*GCQn_KaJobChuZknKEUvlw.png" class="img-fluid" ><br>
+                    </div>
+    A uniform distribution reveals that the number of classes is too small, and each class has the same number of elements. It may involve distribution that has several peaks.<br><br>
+    <span><b>Bimodal Histogram
+</b></span>
+    <div style="text-align: center">
+                    <img src="https://cdn1.byjus.com/wp-content/uploads/2021/03/Histogram-4.png" class="img-fluid" ><br>
+                    </div>
+    If a histogram has two peaks, it is said to be bimodal. Bimodality occurs when the data set has observations on two different kinds of individuals or combined groups if the centers of the two separate histograms are far enough to the variability in both the data sets.<br><br>
+    <span><b>Symmetric Histogram</b></span>
+    <div style="text-align: center">
+                    <img src="https://cdn1.byjus.com/wp-content/uploads/2021/03/Histogram-5.png" class="img-fluid" ><br>
+                    </div>
+    A symmetric histogram is also called a bell-shaped histogram. When you draw the vertical line down the center of the histogram, and the two sides are identical in size and shape, the histogram is said to be symmetric. The diagram is perfectly symmetric if the right half portion of the image is similar to the left half. The histograms that are not symmetric are known as skewed.<br><br>
+    <span><b>Probability Histogram</b><br></span>
+    A Probability Histogram shows a pictorial representation of a discrete probability distribution. It consists of a rectangle centered on every value of x, and the area of each rectangle is proportional to the probability of the corresponding value. The probability histogram diagram is begun by selecting the classes. The probabilities of each outcome are the heights of the bars of the histogram.
+    </p>
+<!--
+                    <p>
+                       In digital image processing, the histogram is used for graphical representation of a digital image. A graph is a plot by the number of pixels for each tonal value. Nowadays, image histogram is present in digital cameras. Photographers use them to see the distribution of tones captured.<br>
+
+In a graph, the horizontal axis of the graph is used to represent tonal variations whereas the vertical axis is used to represent the number of pixels in that particular pixel. Black and dark areas are represented in the left side of the horizontal axis, medium grey color is represented in the middle, and the vertical axis represents the size of the area.<br>
+                        <b>Histogram Processing Techniques</b>
+                        <br>
+                        <span><b>1. Histogram Sliding</b></span>
+                        In Histogram sliding, the complete histogram is shifted towards rightwards or leftwards. When a histogram is shifted towards the right or left, clear changes are seen in the brightness of the image. The brightness of the image is defined by the intensity of light which is emitted by a particular light source.<br>
+                        <div style="text-align: center">
+                    <img src="https://static.javatpoint.com/tutorial/dip/images/dip-histograms3.png" class="img-fluid" ><br>
+                    </div>
+            <span><b>1. Histogram Stretching</b></span>
+            In histogram stretching, contrast of an image is increased. The contrast of an image is defined between the maximum and minimum value of pixel intensity.<br>
+            If we want to increase the contrast of an image, histogram of that image will be fully stretched and covered the dynamic range of the histogram.<br>
+
+From histogram of an image, we can check that the image has low or high contrast.
+            <div style="text-align: center">
+                    <img src="https://static.javatpoint.com/tutorial/dip/images/dip-histograms4.png" class="img-fluid" ><br>
+            </div>
+            <b>Histogram Equalization</b><br>
+                Histogram equalization is used for equalizing all the pixel values of an image. Transformation is done in such a way that uniform flattened histogram is produced.<br>
+
+Histogram equalization increases the dynamic range of pixel values and makes an equal count of pixels at each level which produces a flat histogram with high contrast image.<br>
+
+While stretching histogram, the shape of histogram remains the same whereas in Histogram equalization, the shape of histogram changes and it generates only one image.
+            <div style="text-align: center">
+                    <img src="https://static.javatpoint.com/tutorial/dip/images/dip-histograms5.png" class="img-fluid" ><br>
+            </div>
+                    </p>
+                    <h4>color spaces</h4>
+                    <p>
+-->
+                        
+                        
+                    </p>
+                    <h4 id="three">Fundamentals of filtering, neighbourhood</h4>
+                    <h4>Fundamentals of filtering</h4>
+                    <p>
+                     Filtering is a technique for modifying or enhancing an image. For example, you can filter an image to emphasize certain features or remove other features. Image processing operations implemented with filtering include smoothing, sharpening, and edge enhancement.<br>
+
+Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel. A pixel's neighborhood is some set of pixels, defined by their locations relative to that pixel.  Linear filtering is filtering in which the value of an output pixel is a linear combination of the values of the pixels in the input pixel's neighborhood.
+                    </p>
+                        
+                    <h4 id="four">Linear spatial filtering, Non linear spatial filtering, 
+fspecial() and imfilter().</h4>
+                <h4>Linear spatial filtering</h4>
+                   <p>
+                    Linear spatial filter is simply the average of the pixels contained in the neighborhood of the filter mask. The idea is replacing the value of every pixel in an image by the average of the grey levels in the neighborhood define by the filter mask.
+<p><strong>Types of Linear filter:</strong></p>
+<ul><li><strong>(i) Averaging filter:</strong>
+    It is used in reduction of the detail in image. All coefficients are equal.</li><li><strong>(ii) Weighted averaging filter:</strong> In this, pixels are multiplied by different coefficients. Center pixel is multiplied by a higher value than average filter.</li></ul><br>
+                    </p>
+                      <h4>Non linear spatial filtering</h4> 
+It is based on the ordering the pixels contained in the image area encompassed by the filter. It replaces the value of the center pixel with the value determined by the ranking result. Edges are better preserved in this filtering.
+<p><strong>Types of Order statistics filter:</strong></p>
+<ul><li><strong>(i) Minimum filter:</strong> 0th percentile filter is the minimum filter. The value of the center is replaced by the smallest value in the window.</li><li><strong>(ii) Maximum filter:</strong> 100th percentile filter is the maximum filter. The value of the center is replaced by the largest value in the window.</li><li><strong>(iii) Median filter:</strong> Each pixel in the image is considered. First neighboring pixels are sorted and original values of the pixel is replaced by the median of the list.</li></ul></p>
+  <h4>fspecial() and imfilter()</h4>  
+<p><b>fspecial()</b><br>Create predefined 2-D filter<br><b>imfilter()</b><br>
+The imfilter function computes the value of each output pixel using double-precision, floating-point arithmetic. If the result exceeds the range of the data type, then imfilter truncates the result to the allowed range of the data type. If it is an integer data type, then imfilter rounds fractional values.</p>
+                  
+                   
+                </div>
+            </div>
+        </div>
+       <script>
+             document.getElementById("back").setAttribute("href","imageprocessingL.html");
+        </script>
+    <script src="main.js" type="text/javascript"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        		
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    </body>
+</html>

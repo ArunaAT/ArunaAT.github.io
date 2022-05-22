@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    
+   
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     
+    
+     <script src="https://kit.fontawesome.com/ffbe392e20.js" crossorigin="anonymous"></script>
+     <?php
+     include('backbutton.php');
+      ?>
+        <?php include('navbar.php'); ?>
+        <link href="../css/content.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+     <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/upbutton.css" rel="stylesheet">
+        <style>
+           
+            
+            #bodyy{
+                /* padding:20px; */
+                text-align: justify;
+            }
+            .heading{
+                text-align:center;
+                color:#ff0090;
+                margin-bottom: 10px;
+            }
+            ol li span{
+                color:black;
+                font-weight: bold;
+            }
+            .content{
+                text-align: center;
+            }
+
+
+
+        </style>
+
+        </head>
+            
+        
+    <body id="bodyy">	
+        <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <a class="nav-title aa" id="back">
+        Back
+      </a>
+      <div class="nav-title">
+        YMN
+      </div>
+    </div>
+    <div class="nav-btn" id="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  
+  <div class="nav-links" id="nav-links">
+
+    <a href="MobileApplicationDevelopmentL.html" class="aa">Mobile Development</a>
+    <a href="imageprocessingL.html" class="aa">Digital Image Processing</a>
+    <a href="LinuxL.html" class="aa">Linux Administration</a>
+    <a href="NetworkingL.html" class="aa">Networking Essentials</a>
+  </div>
+</div>
+        <a href="#start"><div class="topp" title="top">
+            <span>
+            <i class="fa fa-solid fa-arrow-up"></i>
+                </span>
+            </div></a>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading" id="start">Introduction to Digital Image Representation</h2>
+                    <div class="card" >
+                        <div class="card-body">
+                            <h3 class="title"> <span>Content</span></h3>
+                            <!-- <p class="description"> -->
+                                
+                                    <a href="#one" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Components of an image processing system</p></a>
+                                    <a href="#two" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Representing digital images,co-ordinate convention system,  
+Matrix representation,</p></a>
+                                    <a href="#three" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Reading, displaying and writing of images</p></a>
+                                    <a href="#four" class="contenta"><p class="contentp"><span><i class="fa fa-solid fa-hand-point-right"></i></span>Data class, Image types, sampling and quantization</p></a>
+                                
+                            
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12">
+                    <h4 id="one">Components of an image processing system</h4>
+                    <!-- <h4>What is Image?</h4> -->
+                    <p>Image Processing System is the combination of the different elements involved in the digital image processing. Digital image processing is the processing of an image by means of a digital computer. Digital image processing uses different computer algorithms to perform image processing on the digital images.
+                        It consists of following components:-</p><br>
+    
+
+                    <div style="text-align: center">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20191204123048/Capture666.png" class="img-fluid" width="80%" height="70%"><br>
+                    </div>
+                    <p>
+                        
+                        <span><b>1. Image Sensors</b></span><br>
+                        <p>It refers to sensing.
+                            The image sensor captures incoming light, convert it into an electrical signal, measure that signal, and output it to supporting electronics.
+                            An image sensor is a 2D array of light-sensitive elements that convert photons into electrons.
+                            CCD (Charged Coupled Device) and CMOS (Complementary Metal-Oxide Conductor) image sensors are widely used in image-capturing devices like digital cameras.
+                            Image sensors have two elements that are required to capture digital images.
+                            The first is a physical device (sensor) that is sensitive to the energy radiated by the object we wish to convert to image.
+                            The second is a digitizer that is used for converting the output of a physical sensing device into digital form.</p>
+                        
+                        <span><b>2. Image Processing Hardware</b></span><br>
+                        <p>Image processing hardware is the dedicated hardware that is used to process the instructions obtained from the image sensors. It passes the result to general purpose computer.</p>                         
+                            </p>
+                      
+                        <span><b>3. Computer</b></span><br>
+                                    <p>The computer in an image processing system is a general-purpose computer and can range from a PC to a supercomputer.</p>
+                                
+                        <span><b>4. Image Processing Software</b></span><br>
+                                    <p>Image processing software is the software that includes all the mechanisms and algorithms that are used in image processing system.</p>
+                                    
+                        <span><b>5. Mass Storage</b></span><br>
+                                    <p>Mass storage stores the pixels of the images during the processing.</p>
+                                    
+                        <span><b>6. Hard Copy Device</b></span><br>
+                        <p>Once the image is processed then it is stored in the hard copy device. It can be a pen drive or any external ROM device.</p>
+                        <span><b>7. Image Display</b></span><br>
+                        <p>It includes the monitor or display screen that displays the processed images.</p>
+                        <span><b>8. Network</b></span><br>
+                        <p>Network is the connection of all the above elements of the image processing system.</p>
+                        <div style="text-align: center">
+                            <img src="https://www.tutorialspoint.com/dip/images/hurdle_detection.jpg"/>
+                        </div>    
+                    </p><br>
+                    <h4 id="two">Representing digital images, co-ordinate convention system, Matrix representation</h4>
+                    <p>
+                        <b>Representing digital images</b>
+                        <p>
+                            An image can be defined as a 2D signal that varies over the spatial coordinates x and y and can be written mathematically a f(x,y).<br>
+
+                            In general, the image can be written as a mathematical function f(x,y) as a matrix of values, comprising of rows and columns.<br>
+
+                            The image f(x,y) is divided into X rows and Y columns. Thus, the coordinate ranges are x = {0, 1,......, X-1} and y = {0, 1,......, Y-1}.<br>
+
+                            The value of the function f(x,y) at every point indexed by a row and a column is called the gray value or intensity of the image. Generally, the value of the pixel is the intensity value of the image at that point.<br>
+
+                            The number of rows in the digital image is called vertical resolution. The number of columns in the digital image is called horizontal resolution. The number of rows and columns describes the dimensions of the image.<br>
+                            The number of bits necessary to encode the pixel value is called bit depth.<br>
+                            The set of all colors that can be represented by the bit depth is called the gamut or palette.<br>
+                            So, the total number of bits necessary to represent the image is equal to Number of rows x Number of columns x Bit depth.
+                        </p>
+                    </p>
+                    <h4>co-ordinate convention system</h4>
+                    <p>
+                        The result of sampling and quantization is a matrix of real numbers. The size of the image
+is the number of rows by the number of columns, M x N. The indexation of the image
+follows the following conventions:
+                        <div style="text-align: center">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/gfg2-5.png"/>
+                        </div>
+                    </p>
+                    <h4 id="three">Reading, displaying and writing of images</h4>
+                    <p>
+                        <span><b>1. Reading an Image</b></span><br>
+                        <p>
+                            We can read any image by using  command imread  as:<br>
+                            imread(‘abc.jpg’);<br>
+                            Here abc is the name of image and jpg is its extension/type.<br>
+                            That command can be used in that way only  if our image is located in same directory. If we want to read image from some other folder then we have to mention complete path of image like:<br>
+                            our_image=imread(‘Z:\Blog\image_processngabc.jpg’);<br>
+                            Now our image will be saved in our_image.
+                        </p>
+                        <span><b>2. displaying an Image</b></span><br>
+                        <p>
+                            We can write an image in Matlab by using imshow command as:<br>
+                            imshow (our_image)<br>
+                            <div style="text-align: center">
+                                <img src="https://xpertsvision.files.wordpress.com/2014/02/bc340-1.jpg" class="img-fluid"/>
+                            </div> <br>
+                            Now lets suppose we have used that imshow command to display another picture f_image, Matlab will displace the first image our_image with second image f_image.<br>
+                            <div style="text-align: center">
+                                <img src="https://xpertsvision.files.wordpress.com/2014/02/e186d-2.jpg" class="img-fluid"/>
+                            </div><br>
+                            Therefore to encounter that problem and to display both images at same time we use function figure as<br>
+                            figure(1)<br>
+                            imshow(our_image)<br>
+                            figure(2)<br>
+                            imshow(f_image)<br>
+                            <div style="text-align: center">
+                                <img src="https://xpertsvision.files.wordpress.com/2014/02/d1479-3.jpg?w=400&h=186" class="img-fluid"/>
+                            </div>
+                            In that way we can read and show as many images as we want simultaneously.
+                        </p>
+                        <span><b>3. writing an Image</b></span><br>
+                        <p>
+                            We can write image by using command imwrite  as follows:<br>
+                            imwrite (f_image, ‘blog.png’)<br>
+                            or<br>
+                            imwrite (f_image, ‘blog’,’png’)<br>
+                            Here f_image is the name of image which we want to save, blog is the new file name in which we want to save that image and png is the type/extension of image. We can save it in any format like jpg, png, tif  etc.<br>
+                            After entering that code we see that a new image with name blog is formed in our current folder/ directory. Now if we want to write image in some other folder (other than current directory), we can do that by including complete path as follows:<br>
+                            imwrite (f_image, ‘E:\blog.png’)
+                        </p>
+                    </p>
+                    <h4 id="four">Data class, Image types, sampling and quantization</h4>
+                   
+                    <h4>Data class</h4>
+                    <p>
+                        Although we work with integer coordinates, the values of pixels themselves are not restricted to be integers in MATLAB. The given table lists the various data classes supported by MATLAB and IPT(Image Processing Toolbox) for representing pixel values. The first eight entries in the table are referred to as numeric data, the ninth entry is the char class and, as shown, the last entry is referred to as the logical data class.<br>
+
+                         All numeric computations in MATLAB are done using double quantities; this is also a frequent data class encountered in image processing applications. Class uint8 also is encountered frequently, especially when reading data from storage devices, as 8-bit images are the most common representations found in practice. These two data classes, class logical and, to a lesser degree, class uint16, constitute the primary data classes on which we focus in this book. Many IPT functions, however, support all the data classes listed . Data class double requires 8 bytes to represent a number, and uint8 and int8 require 1 byte each, and uint16 and int16 require 2 bytes, and uint32, int32 and single require 4 bytes each.
+                        <div style="text-align: center">
+                            <img src="https://2020.robotix.in/img/tutorial/img_processing/img_type/pic5.PNG" class="img-fluid"/>
+                         </div><br>
+                         The char data class holds characters in Unicode representation. A character string is merely a 1 x n array of char-acters. A array contains only the values 0 and 1, with each element being stored in memory using one byte per element. Logical arrays are created by using function logical.
+                    </p>
+                    <h4>Image types</h4>
+                    </p>
+                        <span><b>1. Grayscale or Intensity Image</b></span><br>
+                        <p>
+                            A grayscale image M pixels tall and N pixels wide is represented as a matrix of double datatype of size [M X N]. Element values (e.g., MyImage(m,n)) denote the pixel grayscale intensities in [0,1] with 0=black and 1=white.<br>
+                            <div style="text-align: center">
+                                <img src="https://2020.robotix.in/img/tutorial/img_processing/img_type/pic1.png" class="img-fluid"/>
+                            </div>
+                        </p>
+                        <span><b>2. RGB Image</b></span><br>
+                        <p>
+                            A truecolor red-green-blue (RGB) image is represented as a three-dimensional M×N×3 double matrix. Each pixel has red, green, blue components along the third dimension with values in [0,1], for example, the color components of pixel (m,n) are MyImage(m,n,1) = red, MyImage(m,n,2) = green, MyImage(m,n,3) = blue. If each of these components has a range 0–255, this gives a total of 256*3 different possible colors. Such an image is a “stack” of three matrices; representing the red, green and blue values for each pixel. This means that for every pixel there are 3 corresponding values. True color image may be of type Int or Double.
+                            <div style="text-align: center">
+                                <img src="https://2020.robotix.in/img/tutorial/img_processing/img_type/pic2.png" class="img-fluid"/>
+                            </div>
+                        </p>
+                        <span><b>3. Indexed</b></span><br>
+                        <p>
+                            Indexed (paletted) images are represented with an index matrix of size M×N and a colormap matrix of size K×3. The image has in total  K different colors. The colormap holds all colors used in the image and the index matrix represents the pixels by referring to colors in the colormap. For example, if the 22nd color is magenta MyColormap(22,:) = [1,0,1], then MyImage(m,n) = 22 is a magenta-colored pixel.
+                            <div style="text-align: center">
+                                <img src="https://2020.robotix.in/img/tutorial/img_processing/img_type/pic3.png" class="img-fluid"/>
+                            </div>
+                        </p>
+                        <span><b>4. Binary</b></span><br>
+                        <p>
+                            A binary image is represented by an M×N logical matrix where pixel values are 1 (true) or 0 (false).
+                            <div style="text-align: center">
+                                <img src="https://2020.robotix.in/img/tutorial/img_processing/img_type/pic4.png" class="img-fluid"/>
+                            </div>
+                        </p>
+                    </p>
+                    <h4>Sampling and Quantization</h4>
+                    <p>
+                        In Digital Image Processing, signals captured from the physical world need to be translated into digital form by “Digitization” Process. In order to become suitable for digital processing, an image function f(x,y) must be digitized both spatially and in amplitude. This digitization process involves two main processes called<br>
+                        1. Sampling: Digitizing the co-ordinate value is called sampling.<br>
+                        2. Quantization: Digitizing the amplitude value is called quantization.<br>
+                        Typically, a frame grabber or digitizer is used to sample and quantize the analogue video signal.
+                        <div style="text-align: center">
+                            <img src="http://2.bp.blogspot.com/-Iq4GRXCvMIk/UT6JFbIlUAI/AAAAAAAAAHc/WfXDiIEjmJs/s1600/e+14.JPG" class="img-fluid"/>
+                        </div>
+                    </p>
+                    <b>Sampling</b>
+                    <p>
+                        Since an analogue image is continuous not just in its co-ordinates (x axis), but also in its amplitude (y axis), so the part that deals with the digitizing of co-ordinates is known as sampling. In digitizing sampling is done on independent variable. In case of equation y = sin(x), it is done on x variable.<br>
+                        When looking at this image, we can see there are some random variations in the signal caused by noise. In sampling we reduce this noise by taking samples. It is obvious that more samples we take, the quality of the image would be more better, the noise would be more removed and same happens vice versa. However, if you take sampling on the x axis, the signal is not converted to digital format, unless you take sampling of the y-axis too which is known as quantization.<br>
+                        Sampling has a relationship with image pixels. The total number of pixels in an image can be calculated as Pixels = total no of rows * total no of columns. For example, let’s say we have total of 36 pixels, that means we have a square image of 6X 6. As we know in sampling, that more samples eventually result in more pixels. So it means that of our continuous signal, we have taken 36 samples on x axis. That refers to 36 pixels of this image. Also the number sample is directly equal to the number of sensors on CCD array.
+                        <div style="text-align: center">
+                            <img src="https://miro.medium.com/max/1400/1*6Tq1kh5_9NQbtpaHfNHrEg.jpeg" class="img-fluid"/>
+                        </div>  
+                    </p>
+                    <b>Quantization</b>
+                    <p>
+                        Quantization is opposite to sampling because it is done on “y axis” while sampling is done on “x axis”. Quantization is a process of transforming a real valued sampled image to one taking only a finite number of distinct values. Under quantization process the amplitude values of the image are digitized. In simple words, when you are quantizing an image, you are actually dividing a signal into quanta(partitions).<br>
+                        Now let’s see how quantization is done. Here we assign levels to the values generated by sampling process. In the image showed in sampling explanation, although the samples has been taken, but they were still spanning vertically to a continuous range of gray level values. In the image shown below, these vertically ranging values have been quantized into 5 different levels or partitions. Ranging from 0 black to 4 white. This level could vary according to the type of image you want.<br>
+                        There is a relationship between Quantization with gray level resolution. The above quantized image represents 5 different levels of gray and that means the image formed from this signal, would only have 5 different colors. It would be a black and white image more or less with some colors of gray.<br>
+                        When we want to improve the quality of image, we can increase the levels assign to the sampled image. If we increase this level to 256, it means we have a gray scale image.
+                    </p>
+                </div>
+            </div>
+        </div>
+       <script>
+             document.getElementById("back").setAttribute("href","imageprocessingL.html");
+        </script>
+    <script src="main.js" type="text/javascript"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        		
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    </body>
+</html>
